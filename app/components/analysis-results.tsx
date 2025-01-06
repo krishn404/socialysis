@@ -8,9 +8,11 @@ interface AnalysisResultsProps {
   likes: number;
   comments: number;
   shares: number;
+  platform: string;
+  postType: string;
 }
 
-export default function AnalysisResults({ likes, comments, shares }: AnalysisResultsProps) {
+export default function AnalysisResults({ likes, comments, shares, platform, postType }: AnalysisResultsProps) {
   const [currentLikes, setLikes] = useState(likes)
   const [currentComments, setComments] = useState(comments)
   const [currentShares, setShares] = useState(shares)
@@ -38,7 +40,9 @@ export default function AnalysisResults({ likes, comments, shares }: AnalysisRes
     <Card className="mt-8">
       <CardHeader>
         <CardTitle>Analysis Results</CardTitle>
-        <CardDescription>Engagement metrics for the selected platform and post type</CardDescription>
+        <CardDescription>
+          Engagement metrics for {platform} - {postType}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

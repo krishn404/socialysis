@@ -3,24 +3,34 @@
 import { CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedCard } from "@/components/ui/animated-card"
 import AnalysisResults from './components/analysis-results'
+import { Instagram, Linkedin, Twitter, BarChart3, Image, Film, Images, Sparkles } from 'lucide-react'
 import { useState } from 'react'
 
 export default function Home() {
   const [likes, setLikes] = useState(0)
   const [comments, setComments] = useState(0)
   const [shares, setShares] = useState(0)
+  const [selectedPlatform, setSelectedPlatform] = useState("")
+  const [selectedPostType, setSelectedPostType] = useState("")
+  const [isAnalyzing, setIsAnalyzing] = useState(false)
 
-  const handleAnalyzeClick = () => {
+  const handleAnalyzeClick = async () => {
+    if (!selectedPlatform || !selectedPostType) return
+    
+    setIsAnalyzing(true)
     const newLikes = Math.floor(Math.random() * 10000)
     const newComments = Math.floor(Math.random() * 1000)
     const newShares = Math.floor(Math.random() * 500)
 
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
     animateToValue(setLikes, newLikes, 1500)
     animateToValue(setComments, newComments, 1500)
     animateToValue(setShares, newShares, 1500)
+    setIsAnalyzing(false)
   }
 
   const animateToValue = (setter: React.Dispatch<React.SetStateAction<number>>, finalValue: number, duration: number) => {
@@ -36,78 +46,176 @@ export default function Home() {
     window.requestAnimationFrame(step)
   }
 
+  const platforms = [
+    { value: 'instagram', label: 'Instagram', icon: Instagram },
+    { value: 'linkedin', label: 'LinkedIn', icon: Linkedin },
+    { value: 'twitter', label: 'Twitter', icon: Twitter }
+  ]
+
+  const postTypes = [
+    { value: 'static', label: 'Static Image', icon: Image },
+    { value: 'reel', label: 'Reel', icon: Film },
+    { value: 'carousel', label: 'Carousel', icon: Images }
+  ]
+
   return (
-    <div className="container mx-auto p-4">
-      <div className="max-w-2xl mx-auto">
-        <motion.h1 
+    <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-muted">
+      <div className="container mx-auto px-4 py-8 md:py-12 flex flex-col gap-6 max-w-4xl">
+        <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-3xl font-bold mb-6"
+          className="text-center space-y-4"
         >
-          Social Media Analysis
-        </motion.h1>
-        
-        <AnimatedCard>
-          <CardHeader>
-            <CardTitle>Analysis Parameters</CardTitle>
-            <CardDescription>Select the platform and post type for analysis</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
+          <div className="inline-block">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2 }}
+              className="bg-primary/10 rounded-full p-3 mb-4"
             >
-              <label className="block text-sm font-medium mb-1">Platform</label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select platform" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="instagram">Instagram</SelectItem>
-                  <SelectItem value="linkedin">LinkedIn</SelectItem>
-                  <SelectItem value="twitter">Twitter</SelectItem>
-                </SelectContent>
-              </Select>
+              <Sparkles className="h-6 w-6 text-primary" />
             </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-            >
-              <label className="block text-sm font-medium mb-1">Post Type</label>
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select post type" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="static">Static Image</SelectItem>
-                  <SelectItem value="reel">Reel</SelectItem>
-                  <SelectItem value="carousel">Carousel</SelectItem>
-                </SelectContent>
-              </Select>
-            </motion.div>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/60">
+            Social Media Analysis
+          </h1>
+          <p className="text-muted-foreground text-lg">
+            Get detailed insights into your social media performance
+          </p>
+        </motion.div>
+        
+        <AnimatedCard className="backdrop-blur-sm bg-card/95 shadow-xl border">
+          <CardHeader className="border-b px-6">
+            <div className="flex items-center gap-2">
+              <div className="p-2 bg-primary/10 rounded-lg">
+                <BarChart3 className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <CardTitle>Analysis Parameters</CardTitle>
+                <CardDescription>Configure your analysis settings</CardDescription>
+              </div>
+            </div>
+          </CardHeader>
+          
+          <CardContent className="p-6 space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                className="space-y-3"
+              >
+                <label className="text-sm font-medium">Platform</label>
+                <Select onValueChange={setSelectedPlatform} value={selectedPlatform}>
+                  <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
+                    <SelectValue placeholder="Select platform" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {platforms.map(({ value, label, icon: Icon }) => (
+                      <SelectItem 
+                        key={value} 
+                        value={value}
+                        className="flex items-center gap-2 h-11"
+                      >
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Icon className="h-4 w-4" />
+                          {label}
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3 }}
+                className="space-y-3"
+              >
+                <label className="text-sm font-medium">Post Type</label>
+                <Select onValueChange={setSelectedPostType} value={selectedPostType}>
+                  <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
+                    <SelectValue placeholder="Select post type" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {postTypes.map(({ value, label, icon: Icon }) => (
+                      <SelectItem 
+                        key={value} 
+                        value={value}
+                        className="flex items-center gap-2 h-11"
+                      >
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Icon className="h-4 w-4" />
+                          {label}
+                        </div>
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </motion.div>
+            </div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <Button className="w-full" onClick={handleAnalyzeClick}>Analyze</Button>
+              <Button 
+                className="w-full h-11 relative group"
+                onClick={handleAnalyzeClick}
+                disabled={!selectedPlatform || !selectedPostType || isAnalyzing}
+                variant={isAnalyzing ? "outline" : "default"}
+              >
+                <AnimatePresence mode="wait">
+                  {isAnalyzing ? (
+                    <motion.div
+                      key="analyzing"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="flex items-center gap-2"
+                    >
+                      <div className="h-4 w-4 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+                      <span>Processing Analysis...</span>
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="analyze"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="flex items-center gap-2"
+                    >
+                      <BarChart3 className="h-4 w-4" />
+                      <span>Analyze Performance</span>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </Button>
             </motion.div>
           </CardContent>
         </AnimatedCard>
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <AnalysisResults likes={likes} comments={comments} shares={shares} />
-        </motion.div>
+        <AnimatePresence mode="wait">
+          {(likes > 0 || comments > 0 || shares > 0) && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ delay: 0.2 }}
+            >
+              <AnalysisResults 
+                likes={likes} 
+                comments={comments} 
+                shares={shares}
+                platform={selectedPlatform}
+                postType={selectedPostType}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   )
 }
-
