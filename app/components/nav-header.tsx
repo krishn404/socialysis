@@ -26,12 +26,12 @@ export function NavHeader() {
                 <span className="hidden md:inline">Dashboard</span>
               </Button>
             </Link>
-            <Link href="/chatbot">
+            {/* <Link href="/chatbot">
               <Button variant="ghost" className="h-8 hover:bg-white/10 dark:hover:bg-gray-800/50">
                 <MessageCircle className="mr-2 h-4 w-4" />
                 <span className="hidden md:inline">Chatbot</span>
               </Button>
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </div>

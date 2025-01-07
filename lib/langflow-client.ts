@@ -2,7 +2,7 @@ export class LangflowClient {
     private baseURL: string;
     private applicationToken: string;
   
-    constructor(baseURL: string, applicationToken: string) {
+    constructor(baseURL: string, applicationToken: string = process.env.NEXT_PUBLIC_LANGFLOW_APPLICATION_TOKEN || '') {
       this.baseURL = baseURL;
       this.applicationToken = applicationToken;
     }
