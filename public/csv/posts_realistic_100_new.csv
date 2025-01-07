@@ -1,0 +1,301 @@
+post_id,user_name,post_type,post_country,post_language,likes_cnt,comments_cnt,saved_cnt,genre,hash_tags,description
+0000,user_28,Video,India,English,751,196,52,Travel,"['AI', 'students', 'health', 'technology', 'vacation']",A post about travel.
+0001,user_1,Image,India,German,716,114,56,Fitness,"['health', 'AI', 'vacation', 'forest']",A post about fitness.
+0002,user_65,Video,USA,French,867,400,120,Fitness,"['learning', 'recipe', 'machinelearning']",A post about fitness.
+0003,user_46,Video,Germany,Spanish,554,145,102,Technology,"['nature', 'AI', 'beach']",A post about technology.
+0004,user_54,Video,Australia,Hindi,412,99,51,Nature,"['vacation', 'forest']",A post about nature.
+0005,user_82,Text,USA,German,382,155,99,Travel,"['forest', 'health', 'technology', 'students']",A post about travel.
+0006,user_90,Video,Germany,German,565,204,141,Technology,"['technology', 'forest', 'recipe', 'learning']",A post about technology.
+0007,user_86,Reel,Australia,German,1069,419,149,Fitness,"['AI', 'technology', 'recipe', 'learning', 'students']",A post about fitness.
+0008,user_44,Text,USA,German,470,176,54,Fitness,"['vacation', 'nature', 'coding', 'health']",A post about fitness.
+0009,user_38,Image,USA,English,739,77,133,Fitness,"['beach', 'nature', 'travel', 'health', 'students']",A post about fitness.
+0010,user_22,Text,Germany,Spanish,388,106,54,Cooking,"['nature', 'health', 'learning', 'vacation']",A post about cooking.
+0011,user_17,Video,UK,Spanish,477,99,78,Technology,"['learning', 'coding', 'forest']",A post about technology.
+0012,user_57,Text,Australia,English,417,135,56,Travel,"['vacation', 'travel', 'wildlife', 'coding', 'forest']",A post about travel.
+0013,user_34,Reel,Germany,Hindi,602,299,109,Technology,"['coding', 'vacation', 'beach']",A post about technology.
+0014,user_46,Image,USA,Hindi,755,286,146,Education,"['wildlife', 'beach', 'machinelearning']",A post about education.
+0015,user_27,Reel,UK,Hindi,434,205,121,Nature,"['AI', 'recipe', 'health']",A post about nature.
+0016,user_5,Image,Canada,Spanish,750,296,186,Fitness,"['technology', 'machinelearning']",A post about fitness.
+0017,user_70,Text,UK,Spanish,436,83,67,Travel,"['machinelearning', 'wildlife', 'learning']",A post about travel.
+0018,user_61,Image,Canada,German,840,399,85,Education,"['forest', 'coding']",A post about education.
+0019,user_40,Text,India,German,419,81,50,Travel,"['wildlife', 'health', 'coding']",A post about travel.
+0020,user_54,Video,India,French,925,312,51,Fitness,"['coding', 'beach', 'vacation', 'technology', 'forest']",A post about fitness.
+0021,user_72,Text,Australia,English,184,47,37,Nature,"['coding', 'recipe']",A post about nature.
+0022,user_45,Video,USA,English,931,193,108,Fitness,"['learning', 'health', 'students', 'vacation']",A post about fitness.
+0023,user_7,Reel,India,Hindi,1023,295,180,Fitness,"['recipe', 'beach', 'health', 'coding']",A post about fitness.
+0024,user_45,Reel,UK,Spanish,800,395,80,Cooking,"['fitness', 'nature']",A post about cooking.
+0025,user_14,Image,India,English,671,109,78,Fitness,"['beach', 'recipe', 'vacation', 'fitness']",A post about fitness.
+0026,user_87,Text,Australia,Spanish,553,260,133,Education,"['beach', 'nature', 'students']",A post about education.
+0027,user_72,Text,USA,Spanish,191,44,45,Nature,"['students', 'technology', 'beach', 'health']",A post about nature.
+0028,user_23,Image,UK,German,483,238,113,Cooking,"['students', 'nature', 'recipe', 'coding']",A post about cooking.
+0029,user_35,Image,USA,Spanish,708,245,177,Fitness,"['machinelearning', 'fitness', 'recipe', 'nature', 'coding']",A post about fitness.
+0030,user_98,Text,Canada,French,260,38,34,Nature,"['coding', 'forest']",A post about nature.
+0031,user_42,Text,Canada,Hindi,578,281,166,Education,"['travel', 'forest']",A post about education.
+0032,user_93,Video,Germany,French,863,283,99,Fitness,"['travel', 'forest']",A post about fitness.
+0033,user_47,Reel,Germany,English,1073,365,94,Fitness,"['machinelearning', 'forest']",A post about fitness.
+0034,user_26,Text,UK,Spanish,314,69,58,Technology,"['travel', 'beach', 'forest', 'learning']",A post about technology.
+0035,user_12,Text,UK,French,450,162,111,Travel,"['coding', 'learning']",A post about travel.
+0036,user_24,Text,Canada,German,162,40,46,Nature,"['technology', 'fitness', 'wildlife', 'AI', 'machinelearning']",A post about nature.
+0037,user_11,Image,UK,French,717,261,100,Fitness,"['technology', 'recipe']",A post about fitness.
+0038,user_86,Video,Canada,English,747,193,168,Travel,"['wildlife', 'nature', 'vacation', 'coding', 'AI']",A post about travel.
+0039,user_58,Text,India,Hindi,554,178,64,Education,"['health', 'machinelearning']",A post about education.
+0040,user_88,Reel,India,English,730,164,72,Cooking,"['AI', 'wildlife', 'vacation', 'machinelearning']",A post about cooking.
+0041,user_41,Reel,India,Spanish,738,264,76,Cooking,"['nature', 'technology', 'fitness']",A post about cooking.
+0042,user_55,Text,India,Spanish,379,185,95,Cooking,"['nature', 'technology', 'students', 'fitness', 'machinelearning']",A post about cooking.
+0043,user_94,Reel,USA,English,1168,351,331,Education,"['learning', 'recipe', 'beach', 'students', 'machinelearning']",A post about education.
+0044,user_28,Text,USA,Spanish,223,31,61,Nature,"['coding', 'students']",A post about nature.
+0045,user_21,Image,Canada,English,419,54,21,Technology,"['students', 'nature', 'travel', 'beach']",A post about technology.
+0046,user_100,Reel,Australia,Hindi,402,133,96,Nature,"['beach', 'learning', 'technology', 'forest']",A post about nature.
+0047,user_69,Image,Canada,German,564,126,163,Travel,"['health', 'vacation', 'wildlife', 'students']",A post about travel.
+0048,user_88,Text,Canada,Hindi,319,80,24,Cooking,"['fitness', 'vacation', 'beach', 'forest']",A post about cooking.
+0049,user_28,Image,Germany,German,692,179,74,Fitness,"['nature', 'recipe', 'health']",A post about fitness.
+0050,user_67,Reel,Australia,German,782,88,168,Cooking,"['wildlife', 'health']",A post about cooking.
+0051,user_51,Image,Canada,German,725,87,178,Fitness,"['forest', 'nature']",A post about fitness.
+0052,user_70,Video,India,Hindi,399,77,86,Nature,"['beach', 'recipe', 'vacation', 'learning']",A post about nature.
+0053,user_53,Video,UK,English,425,104,53,Nature,"['learning', 'coding', 'machinelearning']",A post about nature.
+0054,user_17,Image,USA,English,575,278,78,Travel,"['technology', 'coding']",A post about travel.
+0055,user_95,Image,UK,French,509,108,94,Cooking,"['beach', 'vacation', 'technology', 'students']",A post about cooking.
+0056,user_72,Text,USA,English,565,173,158,Education,"['machinelearning', 'fitness', 'technology', 'students', 'beach']",A post about education.
+0057,user_20,Text,UK,French,370,84,97,Travel,"['wildlife', 'fitness', 'coding']",A post about travel.
+0058,user_16,Video,Australia,Hindi,552,122,133,Technology,"['fitness', 'travel', 'students', 'wildlife']",A post about technology.
+0059,user_40,Reel,UK,Spanish,940,466,98,Travel,"['machinelearning', 'students', 'vacation']",A post about travel.
+0060,user_32,Reel,Canada,English,783,208,41,Cooking,"['travel', 'beach', 'recipe', 'wildlife', 'machinelearning']",A post about cooking.
+0061,user_88,Video,Germany,German,873,358,209,Fitness,"['technology', 'machinelearning', 'forest', 'beach', 'wildlife']",A post about fitness.
+0062,user_92,Text,Australia,English,333,135,46,Cooking,"['health', 'AI', 'students', 'fitness', 'vacation']",A post about cooking.
+0063,user_89,Reel,Canada,French,1179,273,259,Education,"['students', 'health', 'coding']",A post about education.
+0064,user_21,Video,USA,French,369,117,36,Nature,"['health', 'wildlife', 'forest', 'nature', 'coding']",A post about nature.
+0065,user_62,Text,Canada,Spanish,418,138,42,Travel,"['wildlife', 'coding', 'machinelearning', 'vacation']",A post about travel.
+0066,user_27,Image,Germany,French,342,144,101,Nature,"['nature', 'learning', 'forest', 'coding', 'health']",A post about nature.
+0067,user_66,Reel,UK,Hindi,949,169,259,Travel,"['machinelearning', 'vacation', 'technology', 'coding', 'fitness']",A post about travel.
+0068,user_86,Video,Germany,German,786,153,214,Travel,"['learning', 'students']",A post about travel.
+0069,user_43,Reel,UK,Hindi,1250,293,216,Education,"['fitness', 'coding', 'beach', 'AI', 'forest']",A post about education.
+0070,user_48,Video,UK,Hindi,514,249,84,Technology,"['fitness', 'recipe', 'health']",A post about technology.
+0071,user_24,Reel,USA,French,1224,149,311,Education,"['machinelearning', 'learning', 'travel', 'coding', 'technology']",A post about education.
+0072,user_54,Reel,Australia,German,599,248,97,Technology,"['nature', 'technology']",A post about technology.
+0073,user_6,Video,USA,French,1084,145,247,Education,"['wildlife', 'machinelearning', 'coding']",A post about education.
+0074,user_58,Video,UK,French,1017,327,138,Education,"['coding', 'learning', 'recipe']",A post about education.
+0075,user_20,Text,Canada,Hindi,317,50,24,Cooking,"['machinelearning', 'forest', 'coding']",A post about cooking.
+0076,user_16,Image,Germany,French,815,82,121,Education,"['learning', 'technology', 'fitness']",A post about education.
+0077,user_81,Text,USA,Hindi,378,112,93,Travel,"['travel', 'students']",A post about travel.
+0078,user_53,Video,Australia,Hindi,622,278,60,Cooking,"['machinelearning', 'wildlife', 'beach']",A post about cooking.
+0079,user_21,Text,USA,Spanish,452,93,39,Travel,"['fitness', 'wildlife']",A post about travel.
+0080,user_97,Reel,Canada,Hindi,924,357,111,Travel,"['wildlife', 'AI', 'fitness', 'students']",A post about travel.
+0081,user_80,Image,UK,English,628,210,38,Travel,"['coding', 'AI']",A post about travel.
+0082,user_100,Video,Canada,French,807,324,67,Travel,"['AI', 'recipe', 'vacation']",A post about travel.
+0083,user_18,Text,Germany,English,462,103,133,Fitness,"['technology', 'fitness', 'machinelearning', 'travel', 'forest']",A post about fitness.
+0084,user_13,Video,UK,Hindi,1038,472,81,Education,"['learning', 'health', 'students', 'vacation']",A post about education.
+0085,user_47,Video,India,Hindi,380,101,97,Nature,"['travel', 'recipe', 'students', 'vacation', 'beach']",A post about nature.
+0086,user_84,Video,Australia,English,879,232,133,Fitness,"['fitness', 'wildlife', 'health', 'forest', 'technology']",A post about fitness.
+0087,user_7,Image,UK,English,315,152,74,Nature,"['nature', 'coding']",A post about nature.
+0088,user_23,Image,Germany,German,584,122,45,Travel,"['recipe', 'technology', 'health']",A post about travel.
+0089,user_70,Text,Australia,French,288,71,67,Technology,"['forest', 'wildlife']",A post about technology.
+0090,user_61,Image,UK,Spanish,697,123,160,Fitness,"['forest', 'recipe', 'wildlife']",A post about fitness.
+0091,user_50,Image,USA,Spanish,435,146,39,Technology,"['wildlife', 'health', 'nature']",A post about technology.
+0092,user_83,Image,India,Hindi,377,186,74,Technology,"['fitness', 'travel', 'recipe', 'technology']",A post about technology.
+0093,user_33,Reel,USA,French,1094,387,209,Fitness,"['coding', 'beach', 'health', 'learning', 'technology']",A post about fitness.
+0094,user_72,Image,India,French,472,110,101,Cooking,"['technology', 'beach', 'recipe', 'wildlife']",A post about cooking.
+0095,user_62,Reel,India,German,448,222,72,Nature,"['nature', 'AI', 'health', 'coding']",A post about nature.
+0096,user_6,Video,Germany,German,938,164,171,Fitness,"['nature', 'machinelearning', 'wildlife', 'fitness']",A post about fitness.
+0097,user_20,Video,Germany,Spanish,777,366,194,Travel,"['recipe', 'nature']",A post about travel.
+0098,user_60,Video,Australia,Spanish,744,86,38,Travel,"['nature', 'wildlife', 'beach', 'vacation', 'recipe']",A post about travel.
+0099,user_32,Video,Canada,English,602,200,169,Cooking,"['machinelearning', 'AI']",A post about cooking.
+0100,user_46,Video,India,Spanish,1081,404,96,Education,"['AI', 'students', 'technology']",A post about education.
+0101,user_66,Reel,Canada,English,1083,227,138,Fitness,"['health', 'fitness', 'recipe']",A post about fitness.
+0102,user_69,Video,India,French,877,106,50,Fitness,"['beach', 'health', 'forest']",A post about fitness.
+0103,user_100,Reel,Germany,English,702,79,62,Cooking,"['recipe', 'nature', 'coding']",A post about cooking.
+0104,user_62,Text,Australia,French,390,157,79,Travel,"['beach', 'forest', 'wildlife', 'students', 'vacation']",A post about travel.
+0105,user_94,Reel,India,French,585,87,137,Technology,"['forest', 'nature', 'technology']",A post about technology.
+0106,user_56,Text,Germany,Hindi,476,118,26,Fitness,"['AI', 'health', 'coding', 'beach']",A post about fitness.
+0107,user_83,Reel,Canada,French,1180,283,273,Education,"['AI', 'beach', 'vacation', 'fitness', 'coding']",A post about education.
+0108,user_46,Reel,Australia,French,1024,426,166,Fitness,"['fitness', 'technology', 'vacation']",A post about fitness.
+0109,user_73,Text,USA,Spanish,317,149,90,Cooking,"['recipe', 'travel']",A post about cooking.
+0110,user_53,Image,Germany,French,598,60,78,Travel,"['nature', 'learning', 'beach', 'coding']",A post about travel.
+0111,user_40,Text,Canada,French,446,103,97,Travel,"['health', 'AI', 'coding', 'forest', 'learning']",A post about travel.
+0112,user_14,Image,Canada,French,410,134,53,Technology,"['fitness', 'travel']",A post about technology.
+0113,user_14,Reel,UK,French,585,223,107,Technology,"['beach', 'machinelearning', 'recipe', 'forest', 'wildlife']",A post about technology.
+0114,user_29,Reel,UK,English,794,84,182,Cooking,"['recipe', 'fitness', 'learning', 'students', 'coding']",A post about cooking.
+0115,user_29,Text,Australia,English,361,144,41,Cooking,"['AI', 'technology', 'recipe', 'fitness', 'machinelearning']",A post about cooking.
+0116,user_64,Reel,UK,French,561,157,100,Technology,"['vacation', 'recipe', 'wildlife', 'machinelearning']",A post about technology.
+0117,user_11,Reel,UK,Hindi,857,136,67,Travel,"['wildlife', 'machinelearning', 'technology', 'forest']",A post about travel.
+0118,user_83,Image,Australia,Spanish,822,125,165,Education,"['travel', 'AI', 'technology']",A post about education.
+0119,user_3,Image,India,Spanish,839,207,235,Education,"['travel', 'forest', 'recipe']",A post about education.
+0120,user_84,Video,UK,English,498,107,99,Technology,"['wildlife', 'coding', 'learning']",A post about technology.
+0121,user_38,Video,Germany,Hindi,939,366,61,Fitness,"['technology', 'beach', 'learning']",A post about fitness.
+0122,user_69,Image,Canada,Hindi,657,236,163,Fitness,"['travel', 'vacation']",A post about fitness.
+0123,user_14,Text,Canada,Spanish,473,206,80,Fitness,"['AI', 'travel', 'vacation', 'health', 'recipe']",A post about fitness.
+0124,user_32,Image,Canada,English,285,130,75,Nature,"['students', 'vacation', 'coding']",A post about nature.
+0125,user_75,Reel,USA,Spanish,1060,231,86,Fitness,"['travel', 'learning']",A post about fitness.
+0126,user_44,Text,Australia,German,382,122,95,Travel,"['recipe', 'forest']",A post about travel.
+0127,user_39,Text,Canada,Spanish,187,51,25,Nature,"['machinelearning', 'fitness', 'nature', 'coding']",A post about nature.
+0128,user_48,Video,India,English,656,177,96,Cooking,"['beach', 'wildlife', 'learning']",A post about cooking.
+0129,user_32,Reel,UK,French,1060,166,197,Fitness,"['machinelearning', 'technology', 'travel', 'beach']",A post about fitness.
+0130,user_36,Reel,India,German,793,323,205,Cooking,"['students', 'travel', 'beach']",A post about cooking.
+0131,user_37,Image,India,Spanish,294,124,48,Nature,"['technology', 'fitness', 'nature', 'health']",A post about nature.
+0132,user_66,Text,USA,German,559,140,90,Education,"['learning', 'travel', 'machinelearning']",A post about education.
+0133,user_31,Video,USA,Spanish,400,155,34,Nature,"['beach', 'vacation']",A post about nature.
+0134,user_63,Reel,USA,French,897,392,227,Travel,"['learning', 'beach', 'AI', 'coding', 'vacation']",A post about travel.
+0135,user_30,Text,USA,French,264,26,18,Technology,"['AI', 'nature']",A post about technology.
+0136,user_22,Image,Canada,Spanish,289,131,66,Nature,"['nature', 'forest']",A post about nature.
+0137,user_22,Reel,Germany,French,593,286,146,Technology,"['learning', 'technology', 'health']",A post about technology.
+0138,user_70,Video,Canada,Hindi,762,177,94,Travel,"['nature', 'recipe', 'vacation']",A post about travel.
+0139,user_97,Text,Germany,Hindi,422,170,92,Travel,"['learning', 'machinelearning', 'recipe']",A post about travel.
+0140,user_13,Text,Canada,English,414,126,112,Travel,"['health', 'forest']",A post about travel.
+0141,user_91,Reel,USA,Hindi,557,143,127,Technology,"['travel', 'coding', 'fitness']",A post about technology.
+0142,user_39,Image,UK,Spanish,265,126,62,Nature,"['machinelearning', 'health', 'travel', 'students', 'nature']",A post about nature.
+0143,user_76,Image,Australia,English,836,204,114,Education,"['beach', 'wildlife', 'vacation', 'nature']",A post about education.
+0144,user_100,Video,USA,English,400,156,66,Nature,"['AI', 'nature']",A post about nature.
+0145,user_73,Image,USA,Hindi,766,223,92,Education,"['travel', 'technology', 'learning']",A post about education.
+0146,user_75,Reel,India,English,1085,417,267,Fitness,"['students', 'nature', 'health', 'AI']",A post about fitness.
+0147,user_64,Image,Australia,French,521,124,142,Cooking,"['AI', 'forest', 'machinelearning']",A post about cooking.
+0148,user_47,Text,UK,English,239,113,40,Nature,"['vacation', 'learning', 'beach', 'machinelearning']",A post about nature.
+0149,user_63,Video,India,French,779,309,64,Travel,"['beach', 'vacation', 'machinelearning']",A post about travel.
+0150,user_86,Image,India,English,700,213,70,Fitness,"['fitness', 'AI', 'wildlife', 'forest', 'machinelearning']",A post about fitness.
+0151,user_10,Video,India,German,519,84,76,Technology,"['nature', 'beach']",A post about technology.
+0152,user_81,Reel,UK,French,1154,524,337,Education,"['students', 'machinelearning', 'AI']",A post about education.
+0153,user_3,Text,Germany,Hindi,520,144,133,Fitness,"['coding', 'travel', 'technology', 'beach', 'machinelearning']",A post about fitness.
+0154,user_81,Text,USA,Hindi,458,160,90,Fitness,"['recipe', 'wildlife', 'forest', 'nature']",A post about fitness.
+0155,user_92,Video,India,French,822,129,88,Travel,"['forest', 'nature', 'AI', 'students']",A post about travel.
+0156,user_90,Video,Germany,Spanish,603,218,117,Cooking,"['fitness', 'vacation', 'technology']",A post about cooking.
+0157,user_9,Text,India,German,392,59,34,Cooking,"['nature', 'recipe']",A post about cooking.
+0158,user_81,Video,India,French,559,277,103,Technology,"['wildlife', 'technology', 'AI', 'vacation']",A post about technology.
+0159,user_44,Video,Germany,German,1013,384,275,Education,"['learning', 'forest', 'AI', 'students']",A post about education.
+0160,user_82,Text,Australia,Spanish,418,92,104,Travel,"['vacation', 'AI', 'fitness', 'machinelearning']",A post about travel.
+0161,user_85,Video,USA,French,673,184,158,Cooking,"['forest', 'students']",A post about cooking.
+0162,user_78,Reel,Canada,German,1067,204,312,Fitness,"['nature', 'fitness', 'learning', 'AI', 'vacation']",A post about fitness.
+0163,user_69,Reel,India,Hindi,1084,437,208,Fitness,"['wildlife', 'fitness', 'AI']",A post about fitness.
+0164,user_62,Reel,Germany,English,770,79,152,Cooking,"['recipe', 'forest', 'beach', 'AI']",A post about cooking.
+0165,user_2,Text,Canada,French,409,125,47,Travel,"['learning', 'nature', 'recipe']",A post about travel.
+0166,user_90,Reel,Germany,French,870,190,103,Travel,"['vacation', 'health', 'wildlife', 'coding', 'beach']",A post about travel.
+0167,user_14,Image,India,German,589,62,41,Travel,"['technology', 'learning']",A post about travel.
+0168,user_70,Video,UK,English,521,104,149,Technology,"['AI', 'coding', 'students', 'nature']",A post about technology.
+0169,user_64,Image,Canada,Hindi,586,143,82,Travel,"['forest', 'travel', 'vacation', 'health']",A post about travel.
+0170,user_92,Video,Germany,German,366,94,86,Nature,"['nature', 'technology', 'forest']",A post about nature.
+0171,user_72,Video,USA,French,525,244,115,Technology,"['fitness', 'AI', 'learning', 'travel', 'wildlife']",A post about technology.
+0172,user_25,Video,Australia,French,995,409,95,Education,"['technology', 'learning', 'nature', 'AI', 'fitness']",A post about education.
+0173,user_7,Image,UK,Spanish,770,326,114,Education,"['learning', 'forest']",A post about education.
+0174,user_71,Text,Australia,Spanish,304,36,39,Technology,"['recipe', 'machinelearning', 'learning', 'vacation']",A post about technology.
+0175,user_49,Video,USA,Spanish,399,103,32,Nature,"['vacation', 'beach']",A post about nature.
+0176,user_52,Reel,UK,Spanish,796,270,187,Cooking,"['nature', 'travel', 'health']",A post about cooking.
+0177,user_79,Reel,Canada,English,454,131,95,Nature,"['coding', 'beach', 'travel', 'fitness', 'students']",A post about nature.
+0178,user_3,Text,UK,English,235,32,17,Technology,"['AI', 'vacation']",A post about technology.
+0179,user_9,Reel,Canada,Hindi,858,191,171,Travel,"['beach', 'learning', 'coding']",A post about travel.
+0180,user_17,Image,UK,German,813,395,181,Education,"['vacation', 'coding', 'students', 'technology', 'wildlife']",A post about education.
+0181,user_92,Text,UK,French,592,116,152,Education,"['vacation', 'nature', 'fitness']",A post about education.
+0182,user_84,Video,Australia,German,700,183,161,Cooking,"['nature', 'learning', 'vacation', 'health', 'coding']",A post about cooking.
+0183,user_48,Reel,India,English,453,47,49,Nature,"['travel', 'learning', 'wildlife']",A post about nature.
+0184,user_100,Image,Canada,English,294,32,16,Nature,"['recipe', 'nature', 'wildlife', 'beach', 'learning']",A post about nature.
+0185,user_46,Image,India,French,366,127,77,Technology,"['beach', 'health']",A post about technology.
+0186,user_72,Image,Australia,German,439,51,93,Technology,"['nature', 'AI', 'vacation', 'beach', 'technology']",A post about technology.
+0187,user_29,Video,India,Hindi,559,195,59,Technology,"['vacation', 'technology', 'fitness']",A post about technology.
+0188,user_78,Image,Canada,Spanish,461,171,104,Cooking,"['forest', 'recipe', 'beach', 'technology', 'learning']",A post about cooking.
+0189,user_48,Image,Australia,Hindi,381,59,23,Technology,"['beach', 'vacation', 'nature']",A post about technology.
+0190,user_86,Text,Germany,German,355,84,60,Cooking,"['recipe', 'vacation']",A post about cooking.
+0191,user_49,Reel,Australia,English,742,236,183,Cooking,"['learning', 'coding']",A post about cooking.
+0192,user_34,Reel,India,Hindi,588,143,155,Technology,"['AI', 'nature', 'vacation', 'recipe', 'wildlife']",A post about technology.
+0193,user_49,Reel,Germany,Spanish,1242,131,176,Education,"['AI', 'students', 'nature', 'technology', 'forest']",A post about education.
+0194,user_48,Video,USA,English,665,243,160,Cooking,"['health', 'students', 'fitness', 'beach', 'recipe']",A post about cooking.
+0195,user_96,Video,Australia,German,885,241,74,Fitness,"['nature', 'fitness']",A post about fitness.
+0196,user_67,Reel,India,Hindi,627,232,110,Technology,"['coding', 'learning', 'fitness', 'beach', 'students']",A post about technology.
+0197,user_93,Text,USA,German,388,94,112,Cooking,"['coding', 'learning', 'students', 'health', 'travel']",A post about cooking.
+0198,user_60,Text,Canada,English,415,85,78,Travel,"['nature', 'vacation', 'forest', 'students']",A post about travel.
+0199,user_88,Image,Canada,French,366,49,25,Technology,"['vacation', 'coding', 'nature', 'technology']",A post about technology.
+0200,user_71,Image,USA,German,622,302,143,Travel,"['recipe', 'technology', 'fitness']",A post about travel.
+0201,user_30,Reel,Australia,Hindi,925,165,256,Travel,"['nature', 'recipe', 'vacation', 'health', 'forest']",A post about travel.
+0202,user_1,Reel,Australia,English,648,273,100,Technology,"['fitness', 'students', 'beach', 'health']",A post about technology.
+0203,user_53,Video,Australia,English,1068,466,148,Education,"['beach', 'machinelearning', 'fitness', 'coding', 'students']",A post about education.
+0204,user_22,Text,Germany,German,424,157,127,Travel,"['AI', 'forest']",A post about travel.
+0205,user_76,Image,Germany,Spanish,405,127,73,Technology,"['wildlife', 'learning', 'technology', 'machinelearning']",A post about technology.
+0206,user_32,Image,Canada,French,443,156,97,Technology,"['students', 'health', 'forest', 'coding']",A post about technology.
+0207,user_70,Text,UK,French,190,36,10,Nature,"['wildlife', 'coding', 'students']",A post about nature.
+0208,user_74,Reel,India,German,754,313,115,Cooking,"['nature', 'health', 'students', 'machinelearning']",A post about cooking.
+0209,user_72,Image,India,Hindi,358,78,104,Technology,"['recipe', 'health']",A post about technology.
+0210,user_98,Video,India,French,683,78,41,Cooking,"['wildlife', 'beach']",A post about cooking.
+0211,user_13,Video,India,English,950,278,54,Fitness,"['learning', 'coding']",A post about fitness.
+0212,user_10,Text,UK,German,388,98,21,Cooking,"['machinelearning', 'forest', 'vacation', 'health']",A post about cooking.
+0213,user_11,Reel,Australia,Hindi,744,115,44,Cooking,"['coding', 'recipe', 'travel', 'technology']",A post about cooking.
+0214,user_99,Text,India,English,517,225,56,Education,"['travel', 'fitness', 'coding', 'technology', 'health']",A post about education.
+0215,user_2,Text,Australia,Spanish,593,82,55,Education,"['recipe', 'vacation']",A post about education.
+0216,user_24,Image,Canada,Hindi,260,68,38,Nature,"['AI', 'forest', 'nature', 'fitness']",A post about nature.
+0217,user_23,Image,UK,Spanish,327,140,57,Nature,"['forest', 'travel', 'health', 'learning', 'vacation']",A post about nature.
+0218,user_78,Video,Canada,Hindi,1048,269,293,Education,"['vacation', 'beach', 'coding', 'students']",A post about education.
+0219,user_78,Reel,Australia,Hindi,563,240,59,Technology,"['machinelearning', 'nature']",A post about technology.
+0220,user_25,Reel,Canada,German,1207,552,218,Education,"['health', 'nature']",A post about education.
+0221,user_99,Video,UK,Spanish,896,352,176,Fitness,"['forest', 'technology']",A post about fitness.
+0222,user_85,Image,UK,French,408,97,112,Technology,"['forest', 'machinelearning', 'health', 'learning']",A post about technology.
+0223,user_69,Image,Germany,English,736,280,65,Fitness,"['machinelearning', 'travel', 'health']",A post about fitness.
+0224,user_11,Text,Germany,Spanish,374,141,100,Cooking,"['wildlife', 'learning', 'vacation', 'machinelearning']",A post about cooking.
+0225,user_52,Reel,India,French,563,217,158,Technology,"['forest', 'coding', 'learning', 'students', 'machinelearning']",A post about technology.
+0226,user_83,Image,UK,German,716,298,194,Fitness,"['technology', 'wildlife']",A post about fitness.
+0227,user_26,Image,Australia,Spanish,735,180,85,Fitness,"['coding', 'students', 'beach', 'nature']",A post about fitness.
+0228,user_37,Image,UK,Hindi,625,195,78,Travel,"['students', 'learning', 'health']",A post about travel.
+0229,user_60,Reel,India,English,725,74,66,Cooking,"['vacation', 'health', 'nature', 'technology', 'forest']",A post about cooking.
+0230,user_59,Video,Germany,French,348,98,94,Nature,"['wildlife', 'beach', 'technology']",A post about nature.
+0231,user_97,Reel,Australia,French,1043,149,153,Fitness,"['vacation', 'coding', 'wildlife']",A post about fitness.
+0232,user_17,Video,Australia,English,921,250,209,Fitness,"['technology', 'beach', 'recipe', 'learning', 'health']",A post about fitness.
+0233,user_64,Image,Canada,English,482,238,42,Cooking,"['fitness', 'wildlife', 'health']",A post about cooking.
+0234,user_22,Reel,India,English,476,214,47,Nature,"['health', 'learning', 'vacation', 'AI']",A post about nature.
+0235,user_54,Image,India,French,561,90,158,Travel,"['nature', 'students', 'learning', 'AI']",A post about travel.
+0236,user_46,Image,Canada,English,427,166,25,Technology,"['travel', 'wildlife', 'AI', 'technology', 'nature']",A post about technology.
+0237,user_70,Video,Canada,English,891,276,116,Fitness,"['wildlife', 'coding']",A post about fitness.
+0238,user_88,Image,India,German,413,56,29,Technology,"['nature', 'AI', 'health', 'students']",A post about technology.
+0239,user_58,Text,India,Spanish,505,144,77,Fitness,"['nature', 'travel', 'fitness']",A post about fitness.
+0240,user_80,Video,UK,German,401,196,87,Nature,"['students', 'wildlife', 'forest']",A post about nature.
+0241,user_25,Video,Germany,Hindi,792,212,73,Travel,"['machinelearning', 'students', 'coding', 'AI']",A post about travel.
+0242,user_82,Text,UK,English,392,43,95,Cooking,"['travel', 'fitness', 'nature']",A post about cooking.
+0243,user_22,Image,Canada,Hindi,453,178,129,Cooking,"['recipe', 'students', 'technology', 'health']",A post about cooking.
+0244,user_77,Image,USA,English,555,203,119,Travel,"['AI', 'recipe', 'travel']",A post about travel.
+0245,user_92,Text,Germany,French,501,110,40,Fitness,"['students', 'learning', 'AI', 'machinelearning']",A post about fitness.
+0246,user_72,Reel,India,Spanish,926,125,228,Travel,"['vacation', 'coding', 'fitness']",A post about travel.
+0247,user_26,Reel,Canada,English,932,320,225,Travel,"['recipe', 'vacation', 'fitness', 'wildlife', 'machinelearning']",A post about travel.
+0248,user_57,Image,Australia,French,284,98,17,Nature,"['vacation', 'beach', 'health', 'AI', 'students']",A post about nature.
+0249,user_63,Image,Germany,French,615,237,52,Travel,"['AI', 'beach']",A post about travel.
+0250,user_13,Text,India,French,225,63,54,Nature,"['fitness', 'students', 'coding']",A post about nature.
+0251,user_67,Video,UK,Spanish,537,158,28,Technology,"['technology', 'fitness', 'machinelearning', 'learning', 'wildlife']",A post about technology.
+0252,user_64,Reel,USA,French,1050,167,218,Fitness,"['fitness', 'technology', 'nature', 'wildlife', 'machinelearning']",A post about fitness.
+0253,user_68,Image,India,English,720,87,154,Fitness,"['recipe', 'travel', 'coding']",A post about fitness.
+0254,user_11,Reel,Germany,German,1188,246,71,Education,"['fitness', 'AI']",A post about education.
+0255,user_20,Video,UK,Hindi,379,66,102,Nature,"['wildlife', 'fitness', 'health', 'travel', 'beach']",A post about nature.
+0256,user_20,Video,USA,English,388,130,91,Nature,"['learning', 'nature', 'students']",A post about nature.
+0257,user_13,Image,Australia,Spanish,295,43,17,Nature,"['machinelearning', 'wildlife']",A post about nature.
+0258,user_65,Text,USA,German,267,99,73,Technology,"['machinelearning', 'nature']",A post about technology.
+0259,user_66,Reel,India,Hindi,1178,522,268,Education,"['AI', 'machinelearning']",A post about education.
+0260,user_80,Image,UK,French,630,131,39,Travel,"['beach', 'learning', 'recipe', 'technology', 'fitness']",A post about travel.
+0261,user_27,Reel,Germany,Spanish,599,191,60,Technology,"['AI', 'coding', 'wildlife', 'vacation']",A post about technology.
+0262,user_5,Video,Canada,English,813,126,127,Travel,"['coding', 'health', 'wildlife', 'nature']",A post about travel.
+0263,user_35,Image,Germany,German,682,77,131,Fitness,"['technology', 'machinelearning', 'beach', 'AI']",A post about fitness.
+0264,user_60,Image,Australia,Hindi,402,193,65,Technology,"['vacation', 'nature', 'machinelearning']",A post about technology.
+0265,user_17,Reel,Australia,Hindi,747,248,46,Cooking,"['machinelearning', 'learning', 'beach', 'forest', 'students']",A post about cooking.
+0266,user_15,Image,Australia,English,512,169,67,Cooking,"['students', 'coding', 'machinelearning', 'learning']",A post about cooking.
+0267,user_41,Image,Australia,French,339,148,18,Nature,"['machinelearning', 'nature', 'students']",A post about nature.
+0268,user_81,Text,Germany,Hindi,456,159,48,Travel,"['nature', 'machinelearning', 'coding']",A post about travel.
+0269,user_88,Text,Canada,French,407,143,87,Travel,"['coding', 'beach', 'fitness']",A post about travel.
+0270,user_96,Image,UK,French,339,57,88,Nature,"['nature', 'beach', 'fitness', 'forest', 'health']",A post about nature.
+0271,user_74,Image,Australia,German,784,195,126,Education,"['health', 'nature']",A post about education.
+0272,user_74,Image,India,Hindi,287,71,33,Nature,"['technology', 'coding', 'vacation']",A post about nature.
+0273,user_47,Reel,Australia,German,919,371,131,Travel,"['travel', 'health', 'machinelearning', 'technology', 'fitness']",A post about travel.
+0274,user_43,Text,UK,German,428,148,119,Travel,"['nature', 'AI', 'students']",A post about travel.
+0275,user_95,Video,Canada,Spanish,795,318,51,Travel,"['coding', 'travel', 'fitness']",A post about travel.
+0276,user_11,Video,India,French,362,143,92,Nature,"['coding', 'nature']",A post about nature.
+0277,user_3,Reel,UK,German,1195,202,100,Education,"['recipe', 'coding', 'students', 'nature', 'health']",A post about education.
+0278,user_73,Image,Germany,English,816,125,70,Education,"['recipe', 'students']",A post about education.
+0279,user_94,Image,UK,German,422,82,49,Technology,"['machinelearning', 'travel', 'learning', 'recipe']",A post about technology.
+0280,user_81,Text,UK,English,205,35,57,Nature,"['nature', 'learning', 'technology', 'vacation', 'AI']",A post about nature.
+0281,user_10,Reel,Australia,German,901,188,162,Travel,"['AI', 'beach', 'fitness', 'learning']",A post about travel.
+0282,user_26,Video,Australia,French,657,282,138,Cooking,"['recipe', 'travel', 'technology']",A post about cooking.
+0283,user_31,Text,Canada,French,289,82,66,Technology,"['AI', 'health']",A post about technology.
+0284,user_30,Video,USA,Spanish,950,295,206,Fitness,"['health', 'nature', 'fitness']",A post about fitness.
+0285,user_84,Video,India,English,366,66,75,Nature,"['travel', 'forest', 'wildlife', 'technology', 'coding']",A post about nature.
+0286,user_22,Video,Germany,Hindi,671,153,131,Cooking,"['beach', 'learning', 'forest', 'coding']",A post about cooking.
+0287,user_69,Reel,Australia,Spanish,402,121,101,Nature,"['learning', 'machinelearning', 'wildlife', 'AI', 'students']",A post about nature.
+0288,user_30,Reel,India,English,1199,435,77,Education,"['AI', 'nature']",A post about education.
+0289,user_97,Reel,Canada,German,1244,209,226,Education,"['technology', 'AI']",A post about education.
+0290,user_95,Reel,India,English,857,276,54,Travel,"['vacation', 'students']",A post about travel.
+0291,user_51,Video,Australia,English,483,80,48,Technology,"['vacation', 'coding', 'recipe', 'technology', 'wildlife']",A post about technology.
+0292,user_83,Image,Australia,Spanish,674,81,81,Fitness,"['fitness', 'coding', 'travel', 'vacation', 'machinelearning']",A post about fitness.
+0293,user_34,Image,India,Spanish,388,130,32,Technology,"['AI', 'wildlife', 'learning']",A post about technology.
+0294,user_7,Reel,India,French,1192,449,190,Education,"['health', 'forest', 'learning']",A post about education.
+0295,user_35,Image,UK,Spanish,569,279,43,Travel,"['wildlife', 'vacation', 'machinelearning']",A post about travel.
+0296,user_30,Video,Germany,Hindi,1036,238,261,Education,"['technology', 'beach']",A post about education.
+0297,user_7,Reel,Australia,Spanish,486,230,124,Nature,"['recipe', 'travel']",A post about nature.
+0298,user_81,Text,Canada,French,533,65,113,Education,"['machinelearning', 'learning']",A post about education.
+0299,user_74,Text,Canada,English,527,236,145,Fitness,"['learning', 'beach']",A post about fitness.

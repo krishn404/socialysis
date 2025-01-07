@@ -1,0 +1,101 @@
+post_id,post_type,genre,hash_tags,most_related_tag
+75e53ac4-7a48-427f-bfa9-d8f629b4fd96,Text,Nature,"['mountains', 'forest', 'wildlife']",wildlife
+34e1d844-47ed-4d69-9ad7-ed624abb2317,Link,Cooking,"['kitchen', 'food']",recipe
+5d30b095-74a1-49d9-b037-59adbe358e54,Image,Tech,"['machinelearning', 'data']",AI
+6811c717-4de9-41c5-962c-12a89e651cec,Video,Travel,"['adventure', 'sunset']",sunset
+3a3afe92-e2a2-4bfe-977b-44949f6bbed8,Image,Nature,"['flowers', 'river', 'forest', 'mountains']",wildlife
+776e05dc-5678-49c1-83e2-b3e3dac533d0,Image,Fitness,"['running', 'yoga', 'training']",workout
+aaa49b93-9172-4433-9541-c8924b022889,Video,Travel,"['sunset', 'beach', 'nature', 'adventure']",sunset
+3eac6ec7-c1f2-4b63-9114-fdb5a9958ab8,Image,Travel,"['beach', 'sunset', 'nature']",sunset
+7b8274ba-21f6-4621-8248-0efe8bc883c1,Link,Education,"['learning', 'classroom', 'coding']",learning
+8b616d34-ac83-45e3-8436-8dd4de8b085a,Text,Tech,"['machinelearning', 'data']",AI
+67d548a0-3a5d-4ae7-996c-de00dfe313cf,Image,Cooking,"['food', 'kitchen', 'baking']",recipe
+9097fdf4-0190-4c24-9bd9-42882d903704,Image,Travel,"['sunset', 'beach']",sunset
+730de440-5889-462f-bb3e-5271a3c36ae4,Video,Education,"['learning', 'books', 'students']",learning
+829ece76-9a6e-4e31-9995-d6be418837ec,Image,Education,"['books', 'learning', 'students']",learning
+22195261-e1a1-45d4-ae09-add240937ebb,Text,Education,"['classroom', 'learning', 'students', 'coding']",learning
+a8ba0749-87f6-40d9-b1c1-820e8e7ba620,Image,Cooking,"['homemade', 'baking']",recipe
+4329d442-7200-419d-9414-d1327ce5f44f,Video,Travel,"['beach', 'adventure']",sunset
+27590ebf-9800-47b3-95c1-0bc9c108dabd,Video,Fitness,"['running', 'workout']",workout
+6adf73e2-531a-4e12-88ec-bfdebd698609,Text,Travel,"['vacation', 'nature']",sunset
+192e4d1f-5162-4b1f-908b-71034233f8b6,Link,Travel,"['adventure', 'vacation', 'beach', 'nature']",sunset
+d182a7fc-e98c-4230-96ae-b0e29b79e5be,Video,Nature,"['forest', 'mountains', 'flowers', 'wildlife']",wildlife
+8d56d6d8-635b-4f84-9e9d-1deb2bd6e3e1,Link,Travel,"['nature', 'vacation', 'adventure', 'beach']",sunset
+93981562-d31c-4fb8-9684-ad9743acc4a6,Link,Travel,"['beach', 'nature', 'sunset', 'vacation']",sunset
+b5695b46-fc2d-4853-8d86-13e4d0666cad,Link,Tech,"['coding', 'python']",AI
+455f5152-f3b9-499a-a423-5a1ab2a85805,Link,Tech,"['data', 'python']",AI
+e417241a-2207-4437-81ef-169e33662c66,Video,Tech,"['python', 'coding', 'data', 'machinelearning']",AI
+611d0983-9785-4b05-ac22-49386f3eba5d,Video,Nature,"['forest', 'river', 'flowers', 'mountains']",wildlife
+1dc23bcd-94ad-4b69-b52b-0961631c88e5,Video,Travel,"['adventure', 'sunset', 'vacation']",sunset
+85df62b9-9eb9-408b-a88a-083f4da3a66d,Image,Cooking,"['baking', 'homemade', 'food', 'recipe']",recipe
+b2a2375d-a862-4f54-b8c9-2b2bb3ec1926,Link,Travel,"['adventure', 'nature', 'vacation', 'beach']",sunset
+45d1f243-fb3d-4862-ac13-b92df2c000ea,Text,Travel,"['vacation', 'nature']",sunset
+78e3c90f-c2d7-49fc-b64e-d36aaed7f86a,Link,Cooking,"['recipe', 'homemade', 'baking']",recipe
+6551d630-2ede-4a67-80a3-d3ae0d4a5468,Text,Cooking,"['kitchen', 'homemade']",recipe
+7599a6f0-a645-4d07-ba2b-87dda234643f,Video,Travel,"['beach', 'sunset', 'nature', 'adventure']",sunset
+5b436fbd-0e0d-4e9b-9423-19a1bb6a7347,Link,Tech,"['machinelearning', 'data']",AI
+b6606f18-4a85-424f-84dd-ca1bf54d3d40,Link,Tech,"['python', 'AI', 'machinelearning', 'coding']",AI
+cc62afac-d3c2-4cd5-ba1b-232951d1d21d,Video,Travel,"['sunset', 'nature', 'beach']",sunset
+bd9f5e58-749e-4e8f-8e3c-edc234197379,Text,Cooking,"['homemade', 'recipe', 'baking', 'food']",recipe
+b17abd35-dced-4ff4-9109-4dedbffff1ce,Text,Cooking,"['homemade', 'baking']",recipe
+1a391d80-ffa2-475e-8498-62f3669156b6,Link,Education,"['students', 'books']",learning
+dc7ad844-ee4a-4e7e-a789-1fa8a6f7144d,Link,Travel,"['vacation', 'adventure']",sunset
+a88cfdfc-1515-4e58-ba32-ff4501f05ecf,Image,Education,"['learning', 'books', 'classroom', 'students']",learning
+1b9ad19c-1e45-4cbb-bd89-93b5e0553d9e,Link,Fitness,"['workout', 'health', 'training', 'yoga']",workout
+90a5091a-4674-4b6b-a348-fde065e4511a,Text,Tech,"['machinelearning', 'coding', 'AI']",AI
+93f82ffb-46d1-4ac2-bc8a-fc4e5b007950,Text,Nature,"['wildlife', 'flowers']",wildlife
+b1ba73b6-89e1-4153-b8ec-073c222635a2,Link,Travel,"['beach', 'nature', 'sunset']",sunset
+30337744-8bb4-4e58-8212-f47d9f999819,Video,Travel,"['vacation', 'sunset', 'adventure']",sunset
+5fef3ada-f69f-4e11-a984-4247ed650a9a,Image,Cooking,"['kitchen', 'recipe']",recipe
+84b15672-94ff-45d3-97ed-7124caadb5e6,Image,Travel,"['sunset', 'vacation', 'adventure', 'nature']",sunset
+8ec93f33-d997-4df4-b979-48266319c937,Video,Cooking,"['kitchen', 'homemade']",recipe
+f557af14-06eb-4a30-b5c2-0977618ab6b5,Video,Travel,"['adventure', 'sunset']",sunset
+8ddacf31-68e4-4b5d-8104-21606bf4772b,Link,Education,"['coding', 'learning', 'books', 'classroom']",learning
+bdbed5e7-54d7-4f80-a38c-ec440531dde0,Link,Tech,"['python', 'AI', 'coding']",AI
+67d79da7-559b-4523-ab66-ce5810bc5e48,Image,Nature,"['wildlife', 'forest']",wildlife
+616bbcaf-117b-4e86-bf6c-fb1225e6a0c3,Text,Travel,"['sunset', 'vacation', 'nature', 'beach']",sunset
+efee94b8-72c4-4d88-b101-ffde0b1a3b15,Video,Education,"['classroom', 'students']",learning
+fe9d5587-7848-46e7-8456-1b40d858967f,Video,Travel,"['vacation', 'sunset']",sunset
+7f8084d6-3137-44b5-ad37-b64392db712c,Image,Cooking,"['homemade', 'kitchen']",recipe
+846d1748-f10f-4b50-9aa2-406d256ce41f,Video,Nature,"['wildlife', 'mountains', 'river']",wildlife
+e6b07521-8a28-4e6a-a1f5-76d72dc4f673,Text,Travel,"['sunset', 'beach']",sunset
+f2ac3d35-22b6-4746-b28f-bb6973962929,Image,Cooking,"['baking', 'recipe']",recipe
+c7326130-6800-46bb-86fb-f2f9f225fd40,Video,Nature,"['flowers', 'wildlife', 'mountains']",wildlife
+18a69342-b7c1-4134-a1a6-189e76232415,Image,Fitness,"['yoga', 'training']",workout
+e71a3966-7041-4e9c-97ac-5356370694d4,Link,Tech,"['AI', 'coding', 'python']",AI
+34474e00-2f96-473a-a90d-0ddf27f3cc63,Text,Nature,"['river', 'forest', 'mountains']",wildlife
+512c1fab-ac0c-4452-ab1d-5c8ae6cb3722,Link,Cooking,"['recipe', 'baking', 'kitchen', 'food']",recipe
+46e86b0b-8aff-442b-8cb9-0bfebafa0c84,Image,Education,"['students', 'learning', 'classroom']",learning
+4dec1807-08ec-42d1-a405-e60c11e2db34,Image,Nature,"['mountains', 'flowers']",wildlife
+3743bfc4-270c-461f-af19-48d503502017,Video,Travel,"['sunset', 'vacation', 'nature']",sunset
+a4cacec2-f965-491d-a6e8-11731c2c43fd,Link,Fitness,"['yoga', 'workout', 'running']",workout
+9578d71a-48e8-4e41-a9fa-ada8fedad2fa,Image,Travel,"['vacation', 'beach', 'nature']",sunset
+b4f595d2-2fab-43fa-a135-d2404c18bf05,Image,Travel,"['beach', 'sunset', 'vacation']",sunset
+45e2db82-7b7b-4ee7-9e30-615d276124f3,Text,Tech,"['AI', 'data', 'python']",AI
+b287b661-643b-426b-844a-f6300e5184dd,Video,Travel,"['nature', 'adventure']",sunset
+b5dbae80-c7ee-4e22-bc4f-9b6086182484,Video,Education,"['students', 'learning']",learning
+a4b6282c-f536-4c15-b1e3-4fd4cc77c6eb,Link,Education,"['students', 'classroom', 'books', 'coding']",learning
+53845e32-58c1-46dd-8ebf-5605b5d04fd1,Link,Nature,"['river', 'mountains']",wildlife
+9b23b901-e022-4fcd-a716-e53d7f6d7a7d,Image,Fitness,"['running', 'yoga']",workout
+b127a04e-ab11-44f2-a2d7-28ecf24ea5f5,Text,Tech,"['python', 'AI', 'machinelearning', 'coding']",AI
+8dcb4765-8d05-49f4-87d3-698ea06ff90f,Text,Nature,"['wildlife', 'river', 'mountains', 'flowers']",wildlife
+f1ae666a-dadb-404e-a303-ad7d65d4d003,Video,Fitness,"['health', 'workout', 'running']",workout
+bcfafbc2-68dd-4469-acc5-31347ff530fe,Image,Education,"['books', 'learning']",learning
+db4e2522-9019-47b4-ae42-32b077769429,Video,Cooking,"['recipe', 'baking', 'food']",recipe
+6880012f-619d-48c6-824f-5d11b8ebf86d,Link,Cooking,"['recipe', 'kitchen', 'food']",recipe
+65eb5b7f-c50b-4f29-a6aa-31728f4e2bf7,Video,Fitness,"['workout', 'yoga', 'health']",workout
+63f8370c-9ae4-4a5f-aead-c4cc471dcbec,Video,Fitness,"['yoga', 'running']",workout
+0080a35c-b975-4c9d-8bed-a8fc8989646f,Link,Tech,"['data', 'python', 'machinelearning', 'coding']",AI
+ad31061a-fb9d-481c-ad42-0d7cde8b8b49,Image,Fitness,"['running', 'training', 'yoga', 'workout']",workout
+74fb5b00-3eb5-45cc-89c0-6955120f1b4f,Text,Cooking,"['homemade', 'recipe']",recipe
+497e27b4-8676-4e9a-84e6-6b08bceb2f58,Image,Nature,"['wildlife', 'mountains', 'forest']",wildlife
+7a6c5971-e676-4639-aa6c-7c28bd39649a,Image,Tech,"['machinelearning', 'data', 'coding']",AI
+f9dac633-4aea-4d17-9018-d3673725f8b7,Image,Travel,"['sunset', 'beach', 'nature', 'vacation']",sunset
+0d1f5f18-296d-47e9-8861-e458e9b8c51f,Text,Education,"['learning', 'students', 'coding']",learning
+6c494c3d-1412-46e9-9a19-f02a3e39e51f,Link,Travel,"['sunset', 'beach', 'vacation', 'adventure']",sunset
+3b1db99f-15e4-45d1-8709-4268d2d18dbb,Text,Fitness,"['training', 'workout']",workout
+425e1318-40cc-41f4-b289-8860b0bf0f38,Image,Tech,"['AI', 'python', 'machinelearning', 'data']",AI
+78bec22c-8d98-452e-a787-590a5425a6f4,Link,Travel,"['beach', 'vacation']",sunset
+bb6fc1db-3663-48ad-8f25-5c7a6c994a6c,Text,Nature,"['forest', 'flowers', 'mountains']",wildlife
+70f044b6-696e-4490-adc3-01b4202803b1,Link,Fitness,"['running', 'training', 'workout']",workout
+5bf09823-a17e-4b0b-833f-38101c2bf66f,Text,Education,"['students', 'classroom']",learning
