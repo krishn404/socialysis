@@ -3,7 +3,9 @@
 import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion, AnimatePresence } from "framer-motion"
+import type { AnalysisData } from '@/lib/types'
 
+// Define the props type
 interface AnalysisResultsProps {
   likes: number;
   comments: number;
@@ -13,9 +15,105 @@ interface AnalysisResultsProps {
 }
 
 export default function AnalysisResults({ likes, comments, shares, platform, postType }: AnalysisResultsProps) {
-  const [currentLikes, setLikes] = useState(likes)
-  const [currentComments, setComments] = useState(comments)
-  const [currentShares, setShares] = useState(shares)
+  const [data, setData] = useState<AnalysisData | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [retryCount, setRetryCount] = useState(0);
+  const [currentLikes, setLikes] = useState(0);
+  const [currentComments, setComments] = useState(0);
+  const [currentShares, setShares] = useState(0);
+
+  const fetchData = async () => {
+    try {
+      const response = await fetch('/api/analysis');
+      const json = await response.json();
+      
+      if (json.error) {
+        throw new Error(json.error);
+      }
+
+      setData(json.data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setError(error instanceof Error ? error.message : 'An error occurred');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    if (data) {
+      setLikes(data.likes || 0);
+      setComments(data.comments || 0);
+      setShares(data.shares || 0);
+    }
+  }, [data]);
+
+  useEffect(() => {
+    if (data) {
+      animateToValue(setLikes, data.likes || 0, 200);
+      animateToValue(setComments, data.comments || 0, 200);
+      animateToValue(setShares, data.shares || 0, 200);
+    }
+  }, [data]);
+
+  useEffect(() => {
+    // Set current likes, comments, and shares from props
+    setLikes(likes);
+    setComments(comments);
+    setShares(shares);
+  }, [likes, comments, shares]);
+
+  if (loading) {
+    return (
+      <Card className="mt-8">
+        <CardContent className="pt-6">
+          <div className="flex flex-col items-center justify-center h-32">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mb-4"></div>
+            <p className="text-sm text-muted-foreground">
+              {retryCount > 0 ? `Retry attempt ${retryCount}...` : 'Loading...'}
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  if (error) {
+    return (
+      <Card className="mt-8">
+        <CardContent className="pt-6">
+          <div className="flex flex-col items-center justify-center h-32">
+            <div className="text-red-500 mb-4 text-center">{error}</div>
+            <button 
+              onClick={() => {
+                setRetryCount(prev => prev + 1);
+                fetchData();
+              }}
+              className="px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 disabled:opacity-50"
+              disabled={loading}
+            >
+              Try Again
+            </button>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  if (!data) {
+    return (
+      <Card className="mt-8">
+        <CardContent className="pt-6">
+          <div className="text-center">No data available</div>
+        </CardContent>
+      </Card>
+    );
+  }
 
   const animateToValue = (setter: React.Dispatch<React.SetStateAction<number>>, finalValue: number, duration: number) => {
     let startTime: number
@@ -29,12 +127,6 @@ export default function AnalysisResults({ likes, comments, shares, platform, pos
     }
     window.requestAnimationFrame(step)
   }
-
-  useEffect(() => {
-    animateToValue(setLikes, likes, 200)
-    animateToValue(setComments, comments, 200)
-    animateToValue(setShares, shares, 200)
-  }, [likes, comments, shares])
 
   return (
     <Card className="mt-8">
@@ -85,4 +177,3 @@ export default function AnalysisResults({ likes, comments, shares, platform, pos
     </Card>
   )
 }
-

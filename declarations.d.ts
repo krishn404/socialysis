@@ -1,0 +1,1 @@
+declare module '@datastax/astra-db-ts'; 

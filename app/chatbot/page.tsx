@@ -6,12 +6,17 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { motion, AnimatePresence } from "framer-motion"
-import { Send, Bot, User } from 'lucide-react'
+import { Send, Bot, User, AlertCircle } from 'lucide-react'
 import { AnimatedCard } from "@/components/ui/animated-card"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
 export default function Chatbot() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat()
-  const [isTyping, setIsTyping] = useState(false)
+  const { messages, input, handleInputChange, handleSubmit, error, isLoading } = useChat({
+    onError: (error) => {
+      console.error('Chat Error:', error);
+    }
+  });
+  
   const messagesEndRef = useRef<HTMLDivElement | null>(null)
 
   const scrollToBottom = () => {
@@ -22,14 +27,15 @@ export default function Chatbot() {
     scrollToBottom()
   }, [messages])
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!input.trim()) return
-    setIsTyping(true)
-
-    // Assuming handleSubmit is a synchronous function, wrap it in a Promise
-    Promise.resolve(handleSubmit(e))
-      .finally(() => setIsTyping(false))
+    if (!input.trim() || isLoading) return
+    
+    try {
+      await handleSubmit(e)
+    } catch (error) {
+      console.error('Submit Error:', error)
+    }
   }
 
   return (
@@ -38,14 +44,14 @@ export default function Chatbot() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className=" text-center mb-8"
+          className="text-center mb-8"
         >
           <h1 className="text-4xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500/60">
             AI Assistant
           </h1>
         </motion.div>
         
-        <AnimatedCard className="relative  mt-15 backdrop-blur-sm bg-card/95 shadow-xl">
+        <AnimatedCard className="relative mt-15 backdrop-blur-sm bg-card/95 shadow-xl">
           <CardHeader className="border-b">
             <CardTitle className="flex items-center gap-2">
               <Bot className="h-4 w-5" />
@@ -53,6 +59,15 @@ export default function Chatbot() {
             </CardTitle>
             <CardDescription>Get insights about your social media engagement metrics</CardDescription>
           </CardHeader>
+          
+          {error && (
+            <Alert variant="destructive" className="m-4">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription>
+                Error: {error.message || 'Something went wrong. Please try again.'}
+              </AlertDescription>
+            </Alert>
+          )}
           
           <CardContent className="h-[calc(100vh-20rem)] md:h-[600px] overflow-y-auto p-4 md:p-6">
             <div className="space-y-6">
@@ -79,7 +94,7 @@ export default function Chatbot() {
                     </div>
                   </motion.div>
                 ))}
-                {isTyping && (
+                {isLoading && (
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -108,11 +123,11 @@ export default function Chatbot() {
                 onChange={handleInputChange}
                 placeholder="Type your message..."
                 className="flex-grow border-none bg-muted/50 backdrop-blur-sm"
-                disabled={isTyping}
+                disabled={isLoading}
               />
               <Button 
                 type="submit" 
-                disabled={isTyping || !input.trim()} 
+                disabled={isLoading || !input.trim()} 
                 className="px-6"
               >
                 <Send className="h-4 w-4" />

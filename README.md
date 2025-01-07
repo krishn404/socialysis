@@ -25,3 +25,16 @@ Socialysis is a powerful social media engagement analysis tool that helps you un
 
 1. Langflow
 2. DataStax
+
+
+### .env.example
+```NEXT_PUBLIC_FLOW_ID=
+NEXT_PUBLIC_LANGFLOW_ID=
+NEXT_PUBLIC_LANGFLOW_APPLICATION_TOKEN=
+NEXT_PUBLIC_LANGFLOW_API_URL=
+ASTRA_DB_APPLICATION_TOKEN=
+ASTRA_DB_KEYSPACE=
+ASTRA_DB_REGION=
+ASTRA_DB_ID=
+NEXT_PUBLIC_MISTRAL_AI_API_KEY=
+```
