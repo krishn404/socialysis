@@ -91,7 +91,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Combination Impact Analysis */}
-        <div className="bg-card p-6 rounded-lg shadow-md">
+        {/* <div className="bg-card p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-medium">Combination Impact Analysis</h2>
           <ResponsiveContainer width="100%" height={400}>
             <BarChart
@@ -107,10 +107,10 @@ export default function DashboardPage() {
               <Bar dataKey="savesImpact" fill="#FBBF24" />
             </BarChart>
           </ResponsiveContainer>
-        </div>
+        </div> */}
 
         {/* Genre Collaboration Analysis */}
-        <div className="bg-card p-6 rounded-lg shadow-md">
+        {/* <div className="bg-card p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-medium">Genre Collaboration Analysis</h2>
           <ResponsiveContainer width="100%" height={400}>
             <BarChart
@@ -124,7 +124,7 @@ export default function DashboardPage() {
               <Bar dataKey="impact" fill="#FF6347" />
             </BarChart>
           </ResponsiveContainer>
-        </div>
+        </div> */}
 
         {/* Yearly Engagement Heatmap */}
         {Object.keys(dayFactors).length > 0 ? (
