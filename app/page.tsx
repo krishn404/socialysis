@@ -16,24 +16,36 @@ export default function Home() {
   const [shares, setShares] = useState(0)
   const [selectedPlatform, setSelectedPlatform] = useState("")
   const [selectedPostType, setSelectedPostType] = useState("")
+  const [selectedGenre, setSelectedGenre] = useState("")
+  const [selectedRegion, setSelectedRegion] = useState("")
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [analysisCompleted, setAnalysisCompleted] = useState(false)
 
   const handleAnalyzeClick = async () => {
-    if (!selectedPlatform || !selectedPostType) return
-    
+    if (!selectedPlatform || !selectedPostType || !selectedGenre || !selectedRegion) return
+
     setIsAnalyzing(true)
     const newLikes = Math.floor(Math.random() * 10000)
     const newComments = Math.floor(Math.random() * 1000)
     const newShares = Math.floor(Math.random() * 500)
 
     await new Promise(resolve => setTimeout(resolve, 1000))
-    
+
     animateToValue(setLikes, newLikes, 1500)
     animateToValue(setComments, newComments, 1500)
     animateToValue(setShares, newShares, 1500)
     setIsAnalyzing(false)
     setAnalysisCompleted(true)
+
+    // Send data to backend
+    const payload = {
+      platform: selectedPlatform,
+      postType: selectedPostType,
+      genre: selectedGenre,
+      region: selectedRegion,
+    }
+    console.log("Sending payload to backend:", payload)
+    // Replace with your backend API call
   }
 
   const animateToValue = (setter: React.Dispatch<React.SetStateAction<number>>, finalValue: number, duration: number) => {
@@ -61,10 +73,27 @@ export default function Home() {
     { value: 'carousel', label: 'Carousel', icon: Images }
   ]
 
+  const genres = [
+    { value: 'travel', label: 'Travel' },
+    { value: 'cooking', label: 'Cooking' },
+    { value: 'nature', label: 'Nature' },
+    { value: 'tech', label: 'Tech' },
+    { value: 'fitness', label: 'Fitness' },
+    { value: 'education', label: 'Education' }
+  ]
+
+  const regions = [
+    { value: 'usa', label: 'USA' },
+    { value: 'india', label: 'India' },
+    { value: 'canada', label: 'Canada' },
+    { value: 'germany', label: 'Germany' },
+    { value: 'australia', label: 'Australia' }
+  ]
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-muted">
       <div className="container mx-auto px-4 py-8 md:py-12 flex flex-col gap-6 max-w-4xl">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center space-y-4"
@@ -86,7 +115,7 @@ export default function Home() {
             Get detailed insights into your social media performance
           </p>
         </motion.div>
-        
+
         <AnimatedCard className="backdrop-blur-sm bg-card/95 shadow-xl border">
           <CardHeader className="border-b px-6">
             <div className="flex items-center gap-2">
@@ -99,15 +128,10 @@ export default function Home() {
               </div>
             </div>
           </CardHeader>
-          
+
           <CardContent className="p-6 space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
-                className="space-y-3"
-              >
+              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }} className="space-y-3">
                 <label className="text-sm font-medium">Platform</label>
                 <Select onValueChange={setSelectedPlatform} value={selectedPlatform}>
                   <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
@@ -115,11 +139,7 @@ export default function Home() {
                   </SelectTrigger>
                   <SelectContent>
                     {platforms.map(({ value, label, icon: Icon }) => (
-                      <SelectItem 
-                        key={value} 
-                        value={value}
-                        className="flex items-center gap-2 h-11"
-                      >
+                      <SelectItem key={value} value={value} className="flex items-center gap-2 h-11">
                         <div className="flex items-center gap-2 text-muted-foreground">
                           <Icon className="h-4 w-4" />
                           {label}
@@ -129,42 +149,57 @@ export default function Home() {
                   </SelectContent>
                 </Select>
               </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
-                className="space-y-3"
-              >
+
+              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="space-y-3">
                 <label className="text-sm font-medium">Post Type</label>
                 <Select onValueChange={setSelectedPostType} value={selectedPostType}>
                   <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
                     <SelectValue placeholder="Select post type" />
                   </SelectTrigger>
                   <SelectContent>
-                    {postTypes.map(({ value, label, icon: Icon }) => (
-                      <SelectItem 
-                        key={value} 
-                        value={value}
-                        className="flex items-center gap-2 h-11"
-                      >
-                        <div className="flex items-center gap-2 text-muted-foreground">
-                          <Icon className="h-4 w-4" />
-                          {label}
-                        </div>
+                    {postTypes.map(({ value, label }) => (
+                      <SelectItem key={value} value={value} className="flex items-center gap-2 h-11">
+                        {label}
                       </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
               </motion.div>
+
+              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }} className="space-y-3">
+                <label className="text-sm font-medium">Genre</label>
+                <Select onValueChange={setSelectedGenre} value={selectedGenre}>
+                  <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
+                    <SelectValue placeholder="Select genre" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {genres.map(({ value, label }) => (
+                      <SelectItem key={value} value={value} className="h-11">{label}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }} className="space-y-3">
+                <label className="text-sm font-medium">Region</label>
+                <Select onValueChange={setSelectedRegion} value={selectedRegion}>
+                  <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
+                    <SelectValue placeholder="Select region" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {regions.map(({ value, label }) => (
+                      <SelectItem key={value} value={value} className="h-11">{label}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </motion.div>
             </div>
-            
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <Button 
+              <Button
                 className="w-full h-11 relative group"
                 onClick={handleAnalyzeClick}
                 disabled={!selectedPlatform || !selectedPostType || isAnalyzing}
@@ -200,7 +235,7 @@ export default function Home() {
           </CardContent>
         </AnimatedCard>
         {/* Chat */}
-        {analysisCompleted && <Chat />}
+        {analysisCompleted && <Chat platform={selectedPlatform} postType={selectedPostType} region={selectedRegion} genre={selectedGenre} />}
 
         <AnimatePresence mode="wait">
           {(likes > 0 || comments > 0 || shares > 0) && (
@@ -210,9 +245,9 @@ export default function Home() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ delay: 0.2 }}
             >
-              <AnalysisResults 
-                likes={likes} 
-                comments={comments} 
+              <AnalysisResults
+                likes={likes}
+                comments={comments}
                 shares={shares}
                 platform={selectedPlatform}
                 postType={selectedPostType}
@@ -220,8 +255,8 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
-        
+
       </div>
     </div>
   )
-}
+}     

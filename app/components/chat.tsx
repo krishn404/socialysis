@@ -1,22 +1,42 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import ReactMarkdown from 'react-markdown';
 
-const Chat = () => {
-  const [chatResponse, setChatResponse] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+interface ChatProps {
+  platform: string;
+  postType: string;
+  region: string;
+  genre: string;
+}
+
+const Chat: React.FC<ChatProps> = ({ platform, postType, region, genre }) => {
+  const [chatResponse, setChatResponse] = React.useState<string | null>(null);
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState<string | null>(null);
 
   const fetchChatResponse = async () => {
+    if (!platform || !postType || !region || !genre) {
+      setError('Missing required fields');
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
     try {
-      const response = await fetch('/api/proxy');
-      
+      const response = await fetch('/api/proxy', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ platform, postType, region, genre }),
+      });
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
-      
+
       if (data.message) {
         setChatResponse(data.message);
       } else if (data.error) {
@@ -32,9 +52,10 @@ const Chat = () => {
     }
   };
 
-  useEffect(() => {
+  // Call fetchChatResponse when the component mounts or when props change
+  React.useEffect(() => {
     fetchChatResponse();
-  }, []);
+  }, [platform, postType, region, genre]);
 
   return (
     <Card className="mt-4">
