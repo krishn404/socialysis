@@ -8,6 +8,7 @@ import { AnimatedCard } from "@/components/ui/animated-card"
 import AnalysisResults from './components/analysis-results'
 import { Instagram, Linkedin, Twitter, BarChart3, Image, Film, Images, Sparkles } from 'lucide-react'
 import { useState } from 'react'
+import Chat from "@/app/components/chat"
 
 export default function Home() {
   const [likes, setLikes] = useState(0)
@@ -16,6 +17,7 @@ export default function Home() {
   const [selectedPlatform, setSelectedPlatform] = useState("")
   const [selectedPostType, setSelectedPostType] = useState("")
   const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [analysisCompleted, setAnalysisCompleted] = useState(false)
 
   const handleAnalyzeClick = async () => {
     if (!selectedPlatform || !selectedPostType) return
@@ -31,6 +33,7 @@ export default function Home() {
     animateToValue(setComments, newComments, 1500)
     animateToValue(setShares, newShares, 1500)
     setIsAnalyzing(false)
+    setAnalysisCompleted(true)
   }
 
   const animateToValue = (setter: React.Dispatch<React.SetStateAction<number>>, finalValue: number, duration: number) => {
@@ -196,7 +199,9 @@ export default function Home() {
             </motion.div>
           </CardContent>
         </AnimatedCard>
-        
+        {/* Chat */}
+        {analysisCompleted && <Chat />}
+
         <AnimatePresence mode="wait">
           {(likes > 0 || comments > 0 || shares > 0) && (
             <motion.div
@@ -215,6 +220,7 @@ export default function Home() {
             </motion.div>
           )}
         </AnimatePresence>
+        
       </div>
     </div>
   )
