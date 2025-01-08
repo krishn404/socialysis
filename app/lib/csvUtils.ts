@@ -26,26 +26,44 @@ export const mergeDataByPostId = (
   posts: Post[],
   recommendations: Recommendation[]
 ): UnifiedData[] => {
-  const postsMap = new Map(posts.map((post) => [post.post_id, post]));
-  const recommendationsMap = new Map(
-    recommendations.map((rec) => [rec.post_id, rec])
-  );
-
-  return engagements.map((eng) => {
-    const post = postsMap.get(eng.post_id);
-    const rec = recommendationsMap.get(eng.post_id);
-
-    return {
-      ...eng,
-      ...post,
-      ...rec,
-      user_name: post?.user_name ?? "",
-      genre: post?.genre ?? "",
-      hash_tags: post?.hash_tags ?? "",
-      post_type: rec?.post_type ?? "",
-      most_related_hashtag: rec?.most_related_hashtag ?? "",
-    };
+  // Create a map for posts by post_id
+  const postsMap = new Map<string, Post>();
+  posts.forEach((post) => {
+    if (!postsMap.has(post.post_id)) {
+      postsMap.set(post.post_id, post);
+    }
   });
+
+  // Create a map for recommendations by post_id
+  const recommendationsMap = new Map<string, Recommendation>();
+  recommendations.forEach((rec) => {
+    if (!recommendationsMap.has(rec.post_id)) {
+      recommendationsMap.set(rec.post_id, rec);
+    }
+  });
+
+  // Deduplicate engagements and merge data
+  const mergedDataMap = new Map<string, UnifiedData>();
+
+  engagements.forEach((eng) => {
+    const post = postsMap.get(eng.post_id) || {};
+    const rec = recommendationsMap.get(eng.post_id) || {};
+
+    if (!mergedDataMap.has(eng.post_id)) {
+      mergedDataMap.set(eng.post_id, {
+        ...eng,
+        ...post,
+        ...rec,
+        user_name: post?.user_name ?? "",
+        genre: post?.genre ?? "",
+        hash_tags: post?.hash_tags ?? "",
+        post_type: rec?.post_type ?? "",
+        most_related_hashtag: rec?.most_related_hashtag ?? "",
+      });
+    }
+  });
+
+  return Array.from(mergedDataMap.values());
 };
 
 export const fetchAnalysisData = async (): Promise<UnifiedData[]> => {

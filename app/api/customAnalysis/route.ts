@@ -3,15 +3,14 @@ import { fetchAnalysisData } from "@/app/lib/csvUtils";
 
 // In-memory cache
 let cache = {
-  result: null as any, // Cached result
-  lastUpdated: 0, // Timestamp of the last update
+  result: null as any,
+  lastUpdated: 0,
 };
 
-const CACHE_DURATION = 60 * 60 * 10000; // 1 hour in milliseconds
+const CACHE_DURATION = 60 * 60 * 1000; // 1 hour in milliseconds
 
 export async function GET() {
   try {
-    // Check if the cache is still valid
     const now = Date.now();
     if (cache.result && now - cache.lastUpdated < CACHE_DURATION) {
       console.log("Serving from cache");
@@ -19,8 +18,6 @@ export async function GET() {
     }
 
     console.log("Calculating and caching result...");
-
-    // Fetch and process data
     const posts = await fetchAnalysisData();
 
     // Totals
@@ -50,7 +47,7 @@ export async function GET() {
     });
     const genreData = Array.from(genreMap.values());
 
-    // Hashtag Analysis
+    // Aggregate Hashtag Metrics
     const hashtagMap = new Map<string, any>();
     posts.forEach((post) => {
       const hashtags = JSON.parse(post.hash_tags.replace(/'/g, '"'));
@@ -60,44 +57,69 @@ export async function GET() {
           likes: 0,
           comments: 0,
           saves: 0,
+          count: 0,
         };
         tag.likes += parseInt(post.likes_cnt);
         tag.comments += parseInt(post.comments_cnt);
         tag.saves += parseInt(post.saved_cnt);
+        tag.count += 1;
         hashtagMap.set(hashtag, tag);
       });
     });
     const hashtagData = Array.from(hashtagMap.values());
 
-    // Combination Impact Analysis
+    // Generate Unique Hashtag Pairs and Calculate Impacts
     const combinationImpacts = [];
-    posts.forEach((post) => {
-      const hashtags = JSON.parse(post.hash_tags.replace(/'/g, '"'));
-      for (let i = 0; i < hashtags.length; i++) {
-        for (let j = i + 1; j < hashtags.length; j++) {
-          const pair = [hashtags[i], hashtags[j]].sort().join(", ");
-          const combinedPerformance =
-            parseInt(post.likes_cnt) +
-            parseInt(post.comments_cnt) +
-            parseInt(post.saved_cnt);
-          const baselinePerformance = combinedPerformance / 2; // Assume equal contribution
-          const impact = combinedPerformance - baselinePerformance;
-          combinationImpacts.push({
-            combination: pair,
-            combinedPerformance,
-            baselinePerformance,
-            impact,
-          });
-        }
-      }
-    });
+    const hashtagsArray = Array.from(hashtagMap.values());
+    for (let i = 0; i < hashtagsArray.length; i++) {
+      for (let j = i + 1; j < hashtagsArray.length; j++) {
+        const tag1 = hashtagsArray[i];
+        const tag2 = hashtagsArray[j];
+        const pair = [tag1.hashtag, tag2.hashtag].sort().join(", ");
 
-    // Genre Collaboration Analysis
+        // Calculate Expected Combined Performance
+        const expectedLikes =
+          (tag1.likes / tag1.count + tag2.likes / tag2.count) / 2;
+        const expectedComments =
+          (tag1.comments / tag1.count + tag2.comments / tag2.count) / 2;
+        const expectedSaves =
+          (tag1.saves / tag1.count + tag2.saves / tag2.count) / 2;
+
+        // Calculate Actual Combined Performance
+        const overlapLikes = Math.min(tag1.likes, tag2.likes) * 0.3; // Assume 30% overlap
+        const overlapComments = Math.min(tag1.comments, tag2.comments) * 0.3;
+        const overlapSaves = Math.min(tag1.saves, tag2.saves) * 0.3;
+
+        const actualCombinedLikes = tag1.likes + tag2.likes - overlapLikes;
+        const actualCombinedComments =
+          tag1.comments + tag2.comments - overlapComments;
+        const actualCombinedSaves = tag1.saves + tag2.saves - overlapSaves;
+
+        // Calculate Percentage Impacts
+        const likesImpactPercentage =
+          (actualCombinedLikes / expectedLikes) * 100;
+        const commentsImpactPercentage =
+          (actualCombinedComments / expectedComments) * 100;
+        const savesImpactPercentage =
+          (actualCombinedSaves / expectedSaves) * 100;
+
+        combinationImpacts.push({
+          combination: pair,
+          likesImpactPercentage: parseFloat(likesImpactPercentage.toFixed(2)),
+          commentsImpactPercentage: parseFloat(
+            commentsImpactPercentage.toFixed(2)
+          ),
+          savesImpactPercentage: parseFloat(savesImpactPercentage.toFixed(2)),
+        });
+      }
+    }
+
+    // Genre Collaboration Analysis using related_genres
     const genreCollaborationMap = new Map<string, any>();
     posts.forEach((post) => {
-      posts.forEach((otherPost) => {
-        if (post.post_id === otherPost.post_id) return;
-        const genrePair = [post.genre, otherPost.genre].sort().join(" & ");
+      const relatedGenres = JSON.parse(post.related_genres.replace(/'/g, '"'));
+      relatedGenres.forEach((relatedGenre: string) => {
+        const genrePair = [post.genre, relatedGenre].sort().join(" & ");
 
         const existing = genreCollaborationMap.get(genrePair) || {
           genre_pair: genrePair,
@@ -109,18 +131,12 @@ export async function GET() {
         const combinedPerformance =
           parseInt(post.likes_cnt) +
           parseInt(post.comments_cnt) +
-          parseInt(post.saved_cnt) +
-          parseInt(otherPost.likes_cnt) +
-          parseInt(otherPost.comments_cnt) +
-          parseInt(otherPost.saved_cnt);
+          parseInt(post.saved_cnt);
 
         const baselinePerformance =
           parseInt(post.likes_cnt) +
           parseInt(post.comments_cnt) +
-          parseInt(post.saved_cnt) +
-          (parseInt(otherPost.likes_cnt) +
-            parseInt(otherPost.comments_cnt) +
-            parseInt(otherPost.saved_cnt));
+          parseInt(post.saved_cnt);
 
         const impact = combinedPerformance - baselinePerformance;
 
@@ -149,10 +165,7 @@ export async function GET() {
   } catch (error) {
     console.error("API Error:", error);
     return NextResponse.json(
-      {
-        error: error instanceof Error ? error.message : "An error occurred",
-        data: null,
-      },
+      { error: error instanceof Error ? error.message : "An error occurred" },
       { status: 500 }
     );
   }

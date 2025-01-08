@@ -1,0 +1,374 @@
+{
+    "jan": {
+        "1": {
+            "factor": 0.5,
+            "reason": "New Year's Day celebration."
+        },
+        "2": {
+            "factor": -0.2,
+            "reason": "People return to work or school; reduced holiday vibes."
+        },
+        "3": {
+            "factor": -0.2,
+            "reason": "People return to work or school; reduced holiday vibes."
+        },
+        "4": {
+            "factor": -0.2,
+            "reason": "People return to work or school; reduced holiday vibes."
+        },
+        "5": {
+            "factor": -0.2,
+            "reason": "People return to work or school; reduced holiday vibes."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Observed in Europe and Latin America (Epiphany)."
+        },
+        "7": {
+            "factor": 0.1,
+            "reason": "Orthodox Christmas celebrated in Russia, Ukraine."
+        },
+        "8": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "9": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "10": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "11": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "12": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "13": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "14": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "15": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Exam preparation in India; similar academic stress in East Asia."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Exam preparation in India; similar academic stress in East Asia."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Exam preparation in India; similar academic stress in East Asia."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Exam preparation in India; similar academic stress in East Asia."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Exam preparation in India; similar academic stress in East Asia."
+        },
+        "21": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "22": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "23": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "24": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "25": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "26": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "27": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "28": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "29": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "30": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        },
+        "31": {
+            "factor": 0,
+            "reason": "Neutral engagement globally."
+        }
+    },
+    "feb": {
+        "6": {
+            "factor": 0.5,
+            "reason": "Chinese New Year boosts engagement in East Asia and diaspora."
+        },
+        "7": {
+            "factor": 0.5,
+            "reason": "Chinese New Year boosts engagement in East Asia and diaspora."
+        },
+        "8": {
+            "factor": 0.5,
+            "reason": "Chinese New Year boosts engagement in East Asia and diaspora."
+        },
+        "9": {
+            "factor": 0.5,
+            "reason": "Chinese New Year boosts engagement in East Asia and diaspora."
+        },
+        "10": {
+            "factor": 0.5,
+            "reason": "Chinese New Year boosts engagement in East Asia and diaspora."
+        },
+        "14": {
+            "factor": 0.5,
+            "reason": "Valentine\u2019s Day celebrated globally."
+        },
+        "15": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "16": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "17": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "18": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "19": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "20": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump globally."
+        },
+        "21": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "22": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "23": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "24": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "25": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "26": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "27": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        },
+        "28": {
+            "factor": 0.1,
+            "reason": "Spring vibes build engagement in Western regions."
+        }
+    },
+    "mar": {
+        "1": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "2": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "3": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "4": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "5": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "6": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "7": {
+            "factor": 0.3,
+            "reason": "Holi preparations increase engagement in India."
+        },
+        "8": {
+            "factor": 0.4,
+            "reason": "International Women\u2019s Day; global observance."
+        },
+        "9": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "10": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "11": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "12": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "13": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "14": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "15": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Exam periods reduce engagement in Europe/USA."
+        },
+        "21": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "22": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "23": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "24": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "25": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "26": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "27": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "28": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "29": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "30": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        },
+        "31": {
+            "factor": 0.2,
+            "reason": "Travel posts increase during Spring Break in USA/Canada."
+        }
+    },
+    "apr": {},
+    "may": {},
+    "jun": {},
+    "jul": {},
+    "aug": {},
+    "sep": {},
+    "oct": {},
+    "nov": {},
+    "dec": {
+        "25": {
+            "factor": 0.5,
+            "reason": "Global Christmas celebrations."
+        },
+        "26": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        },
+        "27": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        },
+        "28": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        },
+        "29": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        },
+        "30": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        },
+        "31": {
+            "factor": 0.3,
+            "reason": "Post-Christmas holiday celebrations."
+        }
+    }
+}

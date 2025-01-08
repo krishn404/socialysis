@@ -9,6 +9,7 @@ import {
   YAxis,
   Tooltip,
 } from "recharts";
+import YearlyHeatmap from "@/app/components/yearlyHeatmap";
 
 export default function DashboardPage() {
   const [totals, setTotals] = useState({ likes: 0, comments: 0, saves: 0 });
@@ -16,7 +17,11 @@ export default function DashboardPage() {
   const [hashtagData, setHashtagData] = useState<any[]>([]);
   const [combinationImpacts, setCombinationImpacts] = useState<any[]>([]);
   const [genreCollaboration, setGenreCollaboration] = useState<any[]>([]);
+  const [dayFactors, setDayFactors] = useState<
+    Record<string, Record<string, { factor: number; reason: string }>>
+  >({});
 
+  // Fetch main analysis data
   useEffect(() => {
     fetch("/api/customAnalysis")
       .then((res) => res.json())
@@ -28,6 +33,16 @@ export default function DashboardPage() {
         setGenreCollaboration(data.genreCollaboration);
       })
       .catch((err) => console.error("Error fetching analysis data:", err));
+  }, []);
+
+  // Fetch yearly heatmap data
+  useEffect(() => {
+    fetch("http://localhost:3000/api/json?filename=completeDayFactors")
+      .then((res) => res.json())
+      .then((data) => {
+        setDayFactors(data);
+      })
+      .catch((err) => console.error("Error fetching heatmap data:", err));
   }, []);
 
   return (
@@ -75,24 +90,34 @@ export default function DashboardPage() {
           </ResponsiveContainer>
         </div>
 
-        {/* Combination Impact */}
+        {/* Combination Impact Analysis */}
         <div className="bg-card p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-medium">Combination Impact Analysis</h2>
           <ResponsiveContainer width="100%" height={400}>
-            <BarChart data={combinationImpacts.slice(0, 10)} layout="vertical">
+            <BarChart
+              data={combinationImpacts.slice(0, 10)}
+              layout="vertical"
+              barCategoryGap={20}
+            >
               <XAxis type="number" hide />
               <YAxis dataKey="combination" type="category" width={200} />
               <Tooltip />
-              <Bar dataKey="impact" fill="#FF6347" />
+              <Bar dataKey="likesImpact" fill="#1DA1F2" />
+              <Bar dataKey="commentsImpact" fill="#34D399" />
+              <Bar dataKey="savesImpact" fill="#FBBF24" />
             </BarChart>
           </ResponsiveContainer>
         </div>
 
-        {/* Genre Collaboration */}
+        {/* Genre Collaboration Analysis */}
         <div className="bg-card p-6 rounded-lg shadow-md">
           <h2 className="text-lg font-medium">Genre Collaboration Analysis</h2>
           <ResponsiveContainer width="100%" height={400}>
-            <BarChart data={genreCollaboration.slice(0, 10)} layout="vertical">
+            <BarChart
+              data={genreCollaboration.slice(0, 10)}
+              layout="vertical"
+              barCategoryGap={20}
+            >
               <XAxis type="number" hide />
               <YAxis dataKey="genre_pair" type="category" width={200} />
               <Tooltip />
@@ -100,6 +125,16 @@ export default function DashboardPage() {
             </BarChart>
           </ResponsiveContainer>
         </div>
+
+        {/* Yearly Engagement Heatmap */}
+        {Object.keys(dayFactors).length > 0 ? (
+          <div className="bg-card p-6 rounded-lg shadow-md">
+            <h2 className="text-lg font-medium">Yearly Engagement Heatmap</h2>
+            <YearlyHeatmap data={dayFactors.data} />
+          </div>
+        ) : (
+          <p>Loading heatmap...</p>
+        )}
       </div>
     </div>
   );

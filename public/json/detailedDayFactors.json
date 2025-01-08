@@ -1,0 +1,117 @@
+[
+    {
+        "month": "January",
+        "days": [
+            {
+                "date_range": "1st",
+                "factor": 0.5,
+                "reason": "New Year's Day celebration."
+            },
+            {
+                "date_range": "2nd - 5th",
+                "factor": -0.1,
+                "reason": "People return to work or school; reduced activity."
+            },
+            {
+                "date_range": "6th",
+                "factor": 0.2,
+                "reason": "Observed in Europe and Latin America."
+            },
+            {
+                "date_range": "7th - 15th",
+                "factor": 0,
+                "reason": "Normal engagement."
+            },
+            {
+                "date_range": "16th - 20th",
+                "factor": -0.2,
+                "reason": "Indian student exams lead to reduced activity."
+            },
+            {
+                "date_range": "21st - 31st",
+                "factor": 0,
+                "reason": "Neutral engagement."
+            }
+        ]
+    },
+    {
+        "month": "February",
+        "days": [
+            {
+                "date_range": "1st - 5th",
+                "factor": 0,
+                "reason": "Regular weekdays."
+            },
+            {
+                "date_range": "6th - 10th",
+                "factor": 0.5,
+                "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+            },
+            {
+                "date_range": "14th",
+                "factor": 0.5,
+                "reason": "Valentine's Day celebration globally."
+            },
+            {
+                "date_range": "15th - 20th",
+                "factor": -0.1,
+                "reason": "Post-Valentine\u2019s slump."
+            },
+            {
+                "date_range": "21st - 28th",
+                "factor": 0.1,
+                "reason": "Build-up to spring vibes in some regions."
+            }
+        ]
+    },
+    {
+        "month": "March",
+        "days": [
+            {
+                "date_range": "1st - 7th",
+                "factor": 0.3,
+                "reason": "Engagement increases in India for Holi festivities."
+            },
+            {
+                "date_range": "8th",
+                "factor": 0.4,
+                "reason": "International Women\u2019s Day global observance."
+            },
+            {
+                "date_range": "9th - 20th",
+                "factor": -0.2,
+                "reason": "Lower engagement in academic regions."
+            },
+            {
+                "date_range": "21st - 31st",
+                "factor": 0.2,
+                "reason": "Travel and celebratory posts increase during Spring Break USA."
+            }
+        ]
+    },
+    {
+        "month": "April",
+        "days": [
+            {
+                "date_range": "1st",
+                "factor": 0.4,
+                "reason": "April Fool\u2019s Day humor and pranks boost engagement."
+            },
+            {
+                "date_range": "2nd - 7th",
+                "factor": 0.3,
+                "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+            },
+            {
+                "date_range": "8th - 15th",
+                "factor": 0.2,
+                "reason": "High engagement in Christian-majority countries for Easter Week."
+            },
+            {
+                "date_range": "16th - 30th",
+                "factor": -0.2,
+                "reason": "Exam season continues globally, reducing engagement."
+            }
+        ]
+    }
+]

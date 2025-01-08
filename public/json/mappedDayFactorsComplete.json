@@ -1,0 +1,1450 @@
+{
+    "jan": {
+        "1": {
+            "factor": 0.5,
+            "reason": "New Year's Day celebration."
+        },
+        "2": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "3": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "4": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "5": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Observed in Europe and Latin America."
+        },
+        "7": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "8": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "9": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "10": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "11": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "12": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "13": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "14": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "15": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "21": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "22": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "23": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "24": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "25": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "26": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "27": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "28": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "29": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "30": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "31": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        }
+    },
+    "feb": {
+        "1": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "2": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "3": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "4": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "5": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "6": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "7": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "8": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "9": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "10": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "14": {
+            "factor": 0.5,
+            "reason": "Valentine's Day celebration globally."
+        },
+        "15": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "16": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "17": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "18": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "19": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "20": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "21": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "22": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "23": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "24": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "25": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "26": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "27": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "28": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        }
+    },
+    "mar": {
+        "1": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "2": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "3": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "4": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "5": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "6": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "7": {
+            "factor": 0.3,
+            "reason": "Engagement increases in India for Holi festivities."
+        },
+        "8": {
+            "factor": 0.4,
+            "reason": "International Women\u2019s Day global observance."
+        },
+        "9": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "10": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "11": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "12": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "13": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "14": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "15": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Lower engagement in academic regions."
+        },
+        "21": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "22": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "23": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "24": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "25": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "26": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "27": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "28": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "29": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "30": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        },
+        "31": {
+            "factor": 0.2,
+            "reason": "Travel and celebratory posts increase during Spring Break USA."
+        }
+    },
+    "apr": {
+        "1": {
+            "factor": 0.4,
+            "reason": "April Fool\u2019s Day humor and pranks boost engagement."
+        },
+        "2": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "3": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "4": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "5": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "6": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "7": {
+            "factor": 0.3,
+            "reason": "Ramadan Begins, boosting engagement in Muslim-majority countries."
+        },
+        "8": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "9": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "10": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "High engagement in Christian-majority countries for Easter Week."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "21": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "22": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "23": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "24": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "25": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "26": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "27": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "28": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "29": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        },
+        "30": {
+            "factor": -0.2,
+            "reason": "Exam season continues globally, reducing engagement."
+        }
+    },
+    "may": {
+        "1": {
+            "factor": 0.3,
+            "reason": "Labor Day observed globally."
+        },
+        "2": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "3": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "4": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "5": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "6": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "7": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "8": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "9": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "10": {
+            "factor": 0,
+            "reason": "Neutral days."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "16": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "17": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "18": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "19": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "20": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "21": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "22": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "23": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "24": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "25": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "26": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "27": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "28": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "29": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "30": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        },
+        "31": {
+            "factor": 0.2,
+            "reason": "Travel and vacation posts dominate during Summer Break."
+        }
+    },
+    "jun": {
+        "1": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "2": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "3": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "4": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "5": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "7": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "8": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "9": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "10": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "16": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "17": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "18": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "19": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "20": {
+            "factor": 0.2,
+            "reason": "Summer vacation begins globally."
+        },
+        "21": {
+            "factor": 0.4,
+            "reason": "Summer Solstice engagement spike."
+        },
+        "22": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "23": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "24": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "25": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "26": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "27": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "28": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "29": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        },
+        "30": {
+            "factor": 0.3,
+            "reason": "Summer activities continue."
+        }
+    },
+    "jul": {
+        "1": {
+            "factor": 0.4,
+            "reason": "USA Independence Day celebrations."
+        },
+        "2": {
+            "factor": 0.4,
+            "reason": "USA Independence Day celebrations."
+        },
+        "3": {
+            "factor": 0.4,
+            "reason": "USA Independence Day celebrations."
+        },
+        "4": {
+            "factor": 0.4,
+            "reason": "USA Independence Day celebrations."
+        },
+        "5": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "7": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "8": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "9": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "10": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "16": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "17": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "18": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "19": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "20": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "21": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "22": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "23": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "24": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "25": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "26": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "27": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "28": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "29": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "30": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        },
+        "31": {
+            "factor": 0.2,
+            "reason": "Global vacation period dominates."
+        }
+    },
+    "aug": {
+        "1": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "2": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "3": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "4": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "5": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "7": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "8": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "9": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "10": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "16": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "17": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "18": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "19": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "20": {
+            "factor": 0.2,
+            "reason": "Summer vacations peak globally."
+        },
+        "21": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "22": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "23": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "24": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "25": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "26": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "27": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "28": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "29": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "30": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        },
+        "31": {
+            "factor": -0.3,
+            "reason": "Back-to-school season reduces engagement."
+        }
+    },
+    "sep": {
+        "1": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "2": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "3": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "4": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "5": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "6": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "7": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "8": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "9": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "10": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "11": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "12": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "13": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "14": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "15": {
+            "factor": -0.2,
+            "reason": "Exam season in India leads to reduced engagement."
+        },
+        "16": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "17": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "18": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "19": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "20": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "21": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "22": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "23": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "24": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "25": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "26": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "27": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "28": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "29": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        },
+        "30": {
+            "factor": 0,
+            "reason": "Normal engagement resumes."
+        }
+    },
+    "oct": {
+        "1": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "2": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "3": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "4": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "5": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "7": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "8": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "9": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "10": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "11": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "12": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "13": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "14": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "15": {
+            "factor": 0.2,
+            "reason": "Autumn vibes boost engagement slightly."
+        },
+        "16": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "17": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "18": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "19": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "20": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "21": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "22": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "23": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "24": {
+            "factor": 0.5,
+            "reason": "Diwali week in India causes a massive engagement spike."
+        },
+        "31": {
+            "factor": 0.4,
+            "reason": "Halloween celebrations boost global engagement."
+        }
+    },
+    "nov": {
+        "1": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "2": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "3": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "4": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "5": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "6": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "7": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "8": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "9": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "10": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "11": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "12": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "13": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "14": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "15": {
+            "factor": 0,
+            "reason": "Neutral engagement period."
+        },
+        "16": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "17": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "18": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "19": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "20": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "21": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "22": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "23": {
+            "factor": 0.3,
+            "reason": "Thanksgiving build-up boosts engagement in the USA."
+        },
+        "24": {
+            "factor": 0.5,
+            "reason": "Thanksgiving Day sees high engagement in the USA."
+        },
+        "25": {
+            "factor": 0.4,
+            "reason": "Black Friday shopping-related posts increase globally."
+        },
+        "26": {
+            "factor": 0,
+            "reason": "Neutral period after Black Friday."
+        },
+        "27": {
+            "factor": 0,
+            "reason": "Neutral period after Black Friday."
+        },
+        "28": {
+            "factor": 0,
+            "reason": "Neutral period after Black Friday."
+        },
+        "29": {
+            "factor": 0,
+            "reason": "Neutral period after Black Friday."
+        },
+        "30": {
+            "factor": 0,
+            "reason": "Neutral period after Black Friday."
+        }
+    },
+    "dec": {
+        "1": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "2": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "3": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "4": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "5": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "6": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "7": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "8": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "9": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "10": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "11": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "12": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "13": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "14": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "15": {
+            "factor": 0.1,
+            "reason": "Build-up to the holiday season."
+        },
+        "16": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "17": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "18": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "19": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "20": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "21": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "22": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "23": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "24": {
+            "factor": 0.4,
+            "reason": "Pre-Christmas anticipation drives engagement."
+        },
+        "25": {
+            "factor": 0.5,
+            "reason": "Christmas Day global celebrations."
+        },
+        "26": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        },
+        "27": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        },
+        "28": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        },
+        "29": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        },
+        "30": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        },
+        "31": {
+            "factor": 0.3,
+            "reason": "Post-Christmas celebrations continue."
+        }
+    }
+}
