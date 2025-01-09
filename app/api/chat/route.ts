@@ -33,28 +33,53 @@ export async function POST(req: Request) {
       "ChatOutput-JtbDE": {}
     };
 
-    const response = await client.runFlow(
-      FLOW_ID,
-      LANGFLOW_ID,
-      currentMessage.content,
-      'chat',
-      'chat',
-      tweaks,
-      false
-    );
+    const MAX_RETRIES = 5; // Maximum number of retries
+    const RETRY_DELAY = 1000; // Initial delay in milliseconds
 
-    // Extract message from the nested response structure
-    const message = response?.outputs?.[0]?.outputs?.[0]?.results?.message?.text;
-    if (!message || typeof message !== 'string') {
-      console.error('Invalid response structure:', response);
-      throw new Error('Invalid response format from Langflow');
+    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+      try {
+        const response = await client.runFlow(
+          FLOW_ID,
+          LANGFLOW_ID,
+          currentMessage.content,
+          'chat',
+          'chat',
+          tweaks,
+          false
+        );
+
+        // Extract message from the nested response structure
+        const message = response?.outputs?.[0]?.outputs?.[0]?.results?.message?.text;
+        if (!message || typeof message !== 'string') {
+          console.error('Invalid response structure:', response);
+          throw new Error('Invalid response format from Langflow');
+        }
+
+        return NextResponse.json({
+          id: crypto.randomUUID(),
+          role: 'assistant',
+          content: message.trim(),
+        });
+      } catch (error) {
+        if (error instanceof Error && error.message.includes('429')) {
+          console.warn(`Attempt ${attempt + 1} failed: ${error.message}. Retrying...`);
+          await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * Math.pow(2, attempt))); // Exponential backoff
+        } else {
+          console.error('Chat API Error:', error);
+          return NextResponse.json(
+            {
+              error: error instanceof Error ? error.message : 'An unknown error occurred',
+            },
+            { status: 500 }
+          );
+        }
+      }
     }
 
-    return NextResponse.json({
-      id: crypto.randomUUID(),
-      role: 'assistant',
-      content: message.trim(),
-    });
+    return NextResponse.json(
+      { error: 'Max retries reached. Please try again later.' },
+      { status: 500 }
+    );
   } catch (error) {
     console.error('Chat API Error:', error);
     return NextResponse.json(

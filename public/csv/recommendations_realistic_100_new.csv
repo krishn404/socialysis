@@ -1,0 +1,301 @@
+post_id,post_type,genre,hash_tags,most_related_tag
+0000,Video,Travel,"['AI', 'students', 'health', 'technology', 'vacation']",AI
+0001,Image,Fitness,"['health', 'AI', 'vacation', 'forest']",health
+0002,Video,Fitness,"['learning', 'recipe', 'machinelearning']",learning
+0003,Video,Technology,"['nature', 'AI', 'beach']",nature
+0004,Video,Nature,"['vacation', 'forest']",forest
+0005,Text,Travel,"['forest', 'health', 'technology', 'students']",health
+0006,Video,Technology,"['technology', 'forest', 'recipe', 'learning']",learning
+0007,Reel,Fitness,"['AI', 'technology', 'recipe', 'learning', 'students']",learning
+0008,Text,Fitness,"['vacation', 'nature', 'coding', 'health']",nature
+0009,Image,Fitness,"['beach', 'nature', 'travel', 'health', 'students']",nature
+0010,Text,Cooking,"['nature', 'health', 'learning', 'vacation']",learning
+0011,Video,Technology,"['learning', 'coding', 'forest']",learning
+0012,Text,Travel,"['vacation', 'travel', 'wildlife', 'coding', 'forest']",wildlife
+0013,Reel,Technology,"['coding', 'vacation', 'beach']",coding
+0014,Image,Education,"['wildlife', 'beach', 'machinelearning']",wildlife
+0015,Reel,Nature,"['AI', 'recipe', 'health']",health
+0016,Image,Fitness,"['technology', 'machinelearning']",machinelearning
+0017,Text,Travel,"['machinelearning', 'wildlife', 'learning']",wildlife
+0018,Image,Education,"['forest', 'coding']",forest
+0019,Text,Travel,"['wildlife', 'health', 'coding']",health
+0020,Video,Fitness,"['coding', 'beach', 'vacation', 'technology', 'forest']",vacation
+0021,Text,Nature,"['coding', 'recipe']",coding
+0022,Video,Fitness,"['learning', 'health', 'students', 'vacation']",vacation
+0023,Reel,Fitness,"['recipe', 'beach', 'health', 'coding']",health
+0024,Reel,Cooking,"['fitness', 'nature']",nature
+0025,Image,Fitness,"['beach', 'recipe', 'vacation', 'fitness']",recipe
+0026,Text,Education,"['beach', 'nature', 'students']",beach
+0027,Text,Nature,"['students', 'technology', 'beach', 'health']",students
+0028,Image,Cooking,"['students', 'nature', 'recipe', 'coding']",nature
+0029,Image,Fitness,"['machinelearning', 'fitness', 'recipe', 'nature', 'coding']",machinelearning
+0030,Text,Nature,"['coding', 'forest']",forest
+0031,Text,Education,"['travel', 'forest']",forest
+0032,Video,Fitness,"['travel', 'forest']",travel
+0033,Reel,Fitness,"['machinelearning', 'forest']",forest
+0034,Text,Technology,"['travel', 'beach', 'forest', 'learning']",beach
+0035,Text,Travel,"['coding', 'learning']",coding
+0036,Text,Nature,"['technology', 'fitness', 'wildlife', 'AI', 'machinelearning']",technology
+0037,Image,Fitness,"['technology', 'recipe']",recipe
+0038,Video,Travel,"['wildlife', 'nature', 'vacation', 'coding', 'AI']",nature
+0039,Text,Education,"['health', 'machinelearning']",health
+0040,Reel,Cooking,"['AI', 'wildlife', 'vacation', 'machinelearning']",wildlife
+0041,Reel,Cooking,"['nature', 'technology', 'fitness']",nature
+0042,Text,Cooking,"['nature', 'technology', 'students', 'fitness', 'machinelearning']",students
+0043,Reel,Education,"['learning', 'recipe', 'beach', 'students', 'machinelearning']",beach
+0044,Text,Nature,"['coding', 'students']",students
+0045,Image,Technology,"['students', 'nature', 'travel', 'beach']",students
+0046,Reel,Nature,"['beach', 'learning', 'technology', 'forest']",beach
+0047,Image,Travel,"['health', 'vacation', 'wildlife', 'students']",wildlife
+0048,Text,Cooking,"['fitness', 'vacation', 'beach', 'forest']",forest
+0049,Image,Fitness,"['nature', 'recipe', 'health']",health
+0050,Reel,Cooking,"['wildlife', 'health']",health
+0051,Image,Fitness,"['forest', 'nature']",nature
+0052,Video,Nature,"['beach', 'recipe', 'vacation', 'learning']",vacation
+0053,Video,Nature,"['learning', 'coding', 'machinelearning']",learning
+0054,Image,Travel,"['technology', 'coding']",technology
+0055,Image,Cooking,"['beach', 'vacation', 'technology', 'students']",beach
+0056,Text,Education,"['machinelearning', 'fitness', 'technology', 'students', 'beach']",fitness
+0057,Text,Travel,"['wildlife', 'fitness', 'coding']",wildlife
+0058,Video,Technology,"['fitness', 'travel', 'students', 'wildlife']",travel
+0059,Reel,Travel,"['machinelearning', 'students', 'vacation']",vacation
+0060,Reel,Cooking,"['travel', 'beach', 'recipe', 'wildlife', 'machinelearning']",recipe
+0061,Video,Fitness,"['technology', 'machinelearning', 'forest', 'beach', 'wildlife']",technology
+0062,Text,Cooking,"['health', 'AI', 'students', 'fitness', 'vacation']",fitness
+0063,Reel,Education,"['students', 'health', 'coding']",health
+0064,Video,Nature,"['health', 'wildlife', 'forest', 'nature', 'coding']",health
+0065,Text,Travel,"['wildlife', 'coding', 'machinelearning', 'vacation']",machinelearning
+0066,Image,Nature,"['nature', 'learning', 'forest', 'coding', 'health']",forest
+0067,Reel,Travel,"['machinelearning', 'vacation', 'technology', 'coding', 'fitness']",fitness
+0068,Video,Travel,"['learning', 'students']",students
+0069,Reel,Education,"['fitness', 'coding', 'beach', 'AI', 'forest']",AI
+0070,Video,Technology,"['fitness', 'recipe', 'health']",health
+0071,Reel,Education,"['machinelearning', 'learning', 'travel', 'coding', 'technology']",coding
+0072,Reel,Technology,"['nature', 'technology']",technology
+0073,Video,Education,"['wildlife', 'machinelearning', 'coding']",machinelearning
+0074,Video,Education,"['coding', 'learning', 'recipe']",recipe
+0075,Text,Cooking,"['machinelearning', 'forest', 'coding']",machinelearning
+0076,Image,Education,"['learning', 'technology', 'fitness']",fitness
+0077,Text,Travel,"['travel', 'students']",students
+0078,Video,Cooking,"['machinelearning', 'wildlife', 'beach']",machinelearning
+0079,Text,Travel,"['fitness', 'wildlife']",fitness
+0080,Reel,Travel,"['wildlife', 'AI', 'fitness', 'students']",fitness
+0081,Image,Travel,"['coding', 'AI']",coding
+0082,Video,Travel,"['AI', 'recipe', 'vacation']",vacation
+0083,Text,Fitness,"['technology', 'fitness', 'machinelearning', 'travel', 'forest']",travel
+0084,Video,Education,"['learning', 'health', 'students', 'vacation']",vacation
+0085,Video,Nature,"['travel', 'recipe', 'students', 'vacation', 'beach']",students
+0086,Video,Fitness,"['fitness', 'wildlife', 'health', 'forest', 'technology']",forest
+0087,Image,Nature,"['nature', 'coding']",nature
+0088,Image,Travel,"['recipe', 'technology', 'health']",recipe
+0089,Text,Technology,"['forest', 'wildlife']",forest
+0090,Image,Fitness,"['forest', 'recipe', 'wildlife']",forest
+0091,Image,Technology,"['wildlife', 'health', 'nature']",wildlife
+0092,Image,Technology,"['fitness', 'travel', 'recipe', 'technology']",technology
+0093,Reel,Fitness,"['coding', 'beach', 'health', 'learning', 'technology']",learning
+0094,Image,Cooking,"['technology', 'beach', 'recipe', 'wildlife']",technology
+0095,Reel,Nature,"['nature', 'AI', 'health', 'coding']",health
+0096,Video,Fitness,"['nature', 'machinelearning', 'wildlife', 'fitness']",machinelearning
+0097,Video,Travel,"['recipe', 'nature']",nature
+0098,Video,Travel,"['nature', 'wildlife', 'beach', 'vacation', 'recipe']",wildlife
+0099,Video,Cooking,"['machinelearning', 'AI']",AI
+0100,Video,Education,"['AI', 'students', 'technology']",technology
+0101,Reel,Fitness,"['health', 'fitness', 'recipe']",recipe
+0102,Video,Fitness,"['beach', 'health', 'forest']",forest
+0103,Reel,Cooking,"['recipe', 'nature', 'coding']",recipe
+0104,Text,Travel,"['beach', 'forest', 'wildlife', 'students', 'vacation']",forest
+0105,Reel,Technology,"['forest', 'nature', 'technology']",forest
+0106,Text,Fitness,"['AI', 'health', 'coding', 'beach']",coding
+0107,Reel,Education,"['AI', 'beach', 'vacation', 'fitness', 'coding']",vacation
+0108,Reel,Fitness,"['fitness', 'technology', 'vacation']",technology
+0109,Text,Cooking,"['recipe', 'travel']",recipe
+0110,Image,Travel,"['nature', 'learning', 'beach', 'coding']",learning
+0111,Text,Travel,"['health', 'AI', 'coding', 'forest', 'learning']",coding
+0112,Image,Technology,"['fitness', 'travel']",travel
+0113,Reel,Technology,"['beach', 'machinelearning', 'recipe', 'forest', 'wildlife']",recipe
+0114,Reel,Cooking,"['recipe', 'fitness', 'learning', 'students', 'coding']",recipe
+0115,Text,Cooking,"['AI', 'technology', 'recipe', 'fitness', 'machinelearning']",technology
+0116,Reel,Technology,"['vacation', 'recipe', 'wildlife', 'machinelearning']",recipe
+0117,Reel,Travel,"['wildlife', 'machinelearning', 'technology', 'forest']",forest
+0118,Image,Education,"['travel', 'AI', 'technology']",travel
+0119,Image,Education,"['travel', 'forest', 'recipe']",travel
+0120,Video,Technology,"['wildlife', 'coding', 'learning']",coding
+0121,Video,Fitness,"['technology', 'beach', 'learning']",technology
+0122,Image,Fitness,"['travel', 'vacation']",vacation
+0123,Text,Fitness,"['AI', 'travel', 'vacation', 'health', 'recipe']",AI
+0124,Image,Nature,"['students', 'vacation', 'coding']",vacation
+0125,Reel,Fitness,"['travel', 'learning']",travel
+0126,Text,Travel,"['recipe', 'forest']",forest
+0127,Text,Nature,"['machinelearning', 'fitness', 'nature', 'coding']",fitness
+0128,Video,Cooking,"['beach', 'wildlife', 'learning']",wildlife
+0129,Reel,Fitness,"['machinelearning', 'technology', 'travel', 'beach']",travel
+0130,Reel,Cooking,"['students', 'travel', 'beach']",students
+0131,Image,Nature,"['technology', 'fitness', 'nature', 'health']",technology
+0132,Text,Education,"['learning', 'travel', 'machinelearning']",machinelearning
+0133,Video,Nature,"['beach', 'vacation']",beach
+0134,Reel,Travel,"['learning', 'beach', 'AI', 'coding', 'vacation']",beach
+0135,Text,Technology,"['AI', 'nature']",AI
+0136,Image,Nature,"['nature', 'forest']",nature
+0137,Reel,Technology,"['learning', 'technology', 'health']",health
+0138,Video,Travel,"['nature', 'recipe', 'vacation']",nature
+0139,Text,Travel,"['learning', 'machinelearning', 'recipe']",recipe
+0140,Text,Travel,"['health', 'forest']",forest
+0141,Reel,Technology,"['travel', 'coding', 'fitness']",fitness
+0142,Image,Nature,"['machinelearning', 'health', 'travel', 'students', 'nature']",health
+0143,Image,Education,"['beach', 'wildlife', 'vacation', 'nature']",wildlife
+0144,Video,Nature,"['AI', 'nature']",AI
+0145,Image,Education,"['travel', 'technology', 'learning']",travel
+0146,Reel,Fitness,"['students', 'nature', 'health', 'AI']",AI
+0147,Image,Cooking,"['AI', 'forest', 'machinelearning']",machinelearning
+0148,Text,Nature,"['vacation', 'learning', 'beach', 'machinelearning']",vacation
+0149,Video,Travel,"['beach', 'vacation', 'machinelearning']",vacation
+0150,Image,Fitness,"['fitness', 'AI', 'wildlife', 'forest', 'machinelearning']",fitness
+0151,Video,Technology,"['nature', 'beach']",nature
+0152,Reel,Education,"['students', 'machinelearning', 'AI']",machinelearning
+0153,Text,Fitness,"['coding', 'travel', 'technology', 'beach', 'machinelearning']",beach
+0154,Text,Fitness,"['recipe', 'wildlife', 'forest', 'nature']",forest
+0155,Video,Travel,"['forest', 'nature', 'AI', 'students']",students
+0156,Video,Cooking,"['fitness', 'vacation', 'technology']",vacation
+0157,Text,Cooking,"['nature', 'recipe']",recipe
+0158,Video,Technology,"['wildlife', 'technology', 'AI', 'vacation']",wildlife
+0159,Video,Education,"['learning', 'forest', 'AI', 'students']",forest
+0160,Text,Travel,"['vacation', 'AI', 'fitness', 'machinelearning']",AI
+0161,Video,Cooking,"['forest', 'students']",forest
+0162,Reel,Fitness,"['nature', 'fitness', 'learning', 'AI', 'vacation']",fitness
+0163,Reel,Fitness,"['wildlife', 'fitness', 'AI']",wildlife
+0164,Reel,Cooking,"['recipe', 'forest', 'beach', 'AI']",AI
+0165,Text,Travel,"['learning', 'nature', 'recipe']",nature
+0166,Reel,Travel,"['vacation', 'health', 'wildlife', 'coding', 'beach']",wildlife
+0167,Image,Travel,"['technology', 'learning']",learning
+0168,Video,Technology,"['AI', 'coding', 'students', 'nature']",coding
+0169,Image,Travel,"['forest', 'travel', 'vacation', 'health']",travel
+0170,Video,Nature,"['nature', 'technology', 'forest']",technology
+0171,Video,Technology,"['fitness', 'AI', 'learning', 'travel', 'wildlife']",travel
+0172,Video,Education,"['technology', 'learning', 'nature', 'AI', 'fitness']",nature
+0173,Image,Education,"['learning', 'forest']",forest
+0174,Text,Technology,"['recipe', 'machinelearning', 'learning', 'vacation']",recipe
+0175,Video,Nature,"['vacation', 'beach']",beach
+0176,Reel,Cooking,"['nature', 'travel', 'health']",nature
+0177,Reel,Nature,"['coding', 'beach', 'travel', 'fitness', 'students']",beach
+0178,Text,Technology,"['AI', 'vacation']",AI
+0179,Reel,Travel,"['beach', 'learning', 'coding']",beach
+0180,Image,Education,"['vacation', 'coding', 'students', 'technology', 'wildlife']",vacation
+0181,Text,Education,"['vacation', 'nature', 'fitness']",fitness
+0182,Video,Cooking,"['nature', 'learning', 'vacation', 'health', 'coding']",vacation
+0183,Reel,Nature,"['travel', 'learning', 'wildlife']",learning
+0184,Image,Nature,"['recipe', 'nature', 'wildlife', 'beach', 'learning']",nature
+0185,Image,Technology,"['beach', 'health']",beach
+0186,Image,Technology,"['nature', 'AI', 'vacation', 'beach', 'technology']",vacation
+0187,Video,Technology,"['vacation', 'technology', 'fitness']",technology
+0188,Image,Cooking,"['forest', 'recipe', 'beach', 'technology', 'learning']",recipe
+0189,Image,Technology,"['beach', 'vacation', 'nature']",vacation
+0190,Text,Cooking,"['recipe', 'vacation']",recipe
+0191,Reel,Cooking,"['learning', 'coding']",coding
+0192,Reel,Technology,"['AI', 'nature', 'vacation', 'recipe', 'wildlife']",AI
+0193,Reel,Education,"['AI', 'students', 'nature', 'technology', 'forest']",AI
+0194,Video,Cooking,"['health', 'students', 'fitness', 'beach', 'recipe']",students
+0195,Video,Fitness,"['nature', 'fitness']",fitness
+0196,Reel,Technology,"['coding', 'learning', 'fitness', 'beach', 'students']",fitness
+0197,Text,Cooking,"['coding', 'learning', 'students', 'health', 'travel']",learning
+0198,Text,Travel,"['nature', 'vacation', 'forest', 'students']",forest
+0199,Image,Technology,"['vacation', 'coding', 'nature', 'technology']",technology
+0200,Image,Travel,"['recipe', 'technology', 'fitness']",technology
+0201,Reel,Travel,"['nature', 'recipe', 'vacation', 'health', 'forest']",forest
+0202,Reel,Technology,"['fitness', 'students', 'beach', 'health']",beach
+0203,Video,Education,"['beach', 'machinelearning', 'fitness', 'coding', 'students']",coding
+0204,Text,Travel,"['AI', 'forest']",forest
+0205,Image,Technology,"['wildlife', 'learning', 'technology', 'machinelearning']",wildlife
+0206,Image,Technology,"['students', 'health', 'forest', 'coding']",students
+0207,Text,Nature,"['wildlife', 'coding', 'students']",coding
+0208,Reel,Cooking,"['nature', 'health', 'students', 'machinelearning']",health
+0209,Image,Technology,"['recipe', 'health']",health
+0210,Video,Cooking,"['wildlife', 'beach']",beach
+0211,Video,Fitness,"['learning', 'coding']",coding
+0212,Text,Cooking,"['machinelearning', 'forest', 'vacation', 'health']",forest
+0213,Reel,Cooking,"['coding', 'recipe', 'travel', 'technology']",travel
+0214,Text,Education,"['travel', 'fitness', 'coding', 'technology', 'health']",coding
+0215,Text,Education,"['recipe', 'vacation']",recipe
+0216,Image,Nature,"['AI', 'forest', 'nature', 'fitness']",fitness
+0217,Image,Nature,"['forest', 'travel', 'health', 'learning', 'vacation']",health
+0218,Video,Education,"['vacation', 'beach', 'coding', 'students']",beach
+0219,Reel,Technology,"['machinelearning', 'nature']",nature
+0220,Reel,Education,"['health', 'nature']",nature
+0221,Video,Fitness,"['forest', 'technology']",technology
+0222,Image,Technology,"['forest', 'machinelearning', 'health', 'learning']",learning
+0223,Image,Fitness,"['machinelearning', 'travel', 'health']",machinelearning
+0224,Text,Cooking,"['wildlife', 'learning', 'vacation', 'machinelearning']",wildlife
+0225,Reel,Technology,"['forest', 'coding', 'learning', 'students', 'machinelearning']",students
+0226,Image,Fitness,"['technology', 'wildlife']",wildlife
+0227,Image,Fitness,"['coding', 'students', 'beach', 'nature']",nature
+0228,Image,Travel,"['students', 'learning', 'health']",health
+0229,Reel,Cooking,"['vacation', 'health', 'nature', 'technology', 'forest']",forest
+0230,Video,Nature,"['wildlife', 'beach', 'technology']",technology
+0231,Reel,Fitness,"['vacation', 'coding', 'wildlife']",vacation
+0232,Video,Fitness,"['technology', 'beach', 'recipe', 'learning', 'health']",health
+0233,Image,Cooking,"['fitness', 'wildlife', 'health']",fitness
+0234,Reel,Nature,"['health', 'learning', 'vacation', 'AI']",vacation
+0235,Image,Travel,"['nature', 'students', 'learning', 'AI']",nature
+0236,Image,Technology,"['travel', 'wildlife', 'AI', 'technology', 'nature']",nature
+0237,Video,Fitness,"['wildlife', 'coding']",wildlife
+0238,Image,Technology,"['nature', 'AI', 'health', 'students']",nature
+0239,Text,Fitness,"['nature', 'travel', 'fitness']",travel
+0240,Video,Nature,"['students', 'wildlife', 'forest']",wildlife
+0241,Video,Travel,"['machinelearning', 'students', 'coding', 'AI']",AI
+0242,Text,Cooking,"['travel', 'fitness', 'nature']",fitness
+0243,Image,Cooking,"['recipe', 'students', 'technology', 'health']",health
+0244,Image,Travel,"['AI', 'recipe', 'travel']",AI
+0245,Text,Fitness,"['students', 'learning', 'AI', 'machinelearning']",students
+0246,Reel,Travel,"['vacation', 'coding', 'fitness']",vacation
+0247,Reel,Travel,"['recipe', 'vacation', 'fitness', 'wildlife', 'machinelearning']",recipe
+0248,Image,Nature,"['vacation', 'beach', 'health', 'AI', 'students']",beach
+0249,Image,Travel,"['AI', 'beach']",AI
+0250,Text,Nature,"['fitness', 'students', 'coding']",coding
+0251,Video,Technology,"['technology', 'fitness', 'machinelearning', 'learning', 'wildlife']",technology
+0252,Reel,Fitness,"['fitness', 'technology', 'nature', 'wildlife', 'machinelearning']",machinelearning
+0253,Image,Fitness,"['recipe', 'travel', 'coding']",travel
+0254,Reel,Education,"['fitness', 'AI']",fitness
+0255,Video,Nature,"['wildlife', 'fitness', 'health', 'travel', 'beach']",health
+0256,Video,Nature,"['learning', 'nature', 'students']",nature
+0257,Image,Nature,"['machinelearning', 'wildlife']",wildlife
+0258,Text,Technology,"['machinelearning', 'nature']",machinelearning
+0259,Reel,Education,"['AI', 'machinelearning']",machinelearning
+0260,Image,Travel,"['beach', 'learning', 'recipe', 'technology', 'fitness']",learning
+0261,Reel,Technology,"['AI', 'coding', 'wildlife', 'vacation']",wildlife
+0262,Video,Travel,"['coding', 'health', 'wildlife', 'nature']",wildlife
+0263,Image,Fitness,"['technology', 'machinelearning', 'beach', 'AI']",beach
+0264,Image,Technology,"['vacation', 'nature', 'machinelearning']",vacation
+0265,Reel,Cooking,"['machinelearning', 'learning', 'beach', 'forest', 'students']",learning
+0266,Image,Cooking,"['students', 'coding', 'machinelearning', 'learning']",learning
+0267,Image,Nature,"['machinelearning', 'nature', 'students']",students
+0268,Text,Travel,"['nature', 'machinelearning', 'coding']",machinelearning
+0269,Text,Travel,"['coding', 'beach', 'fitness']",fitness
+0270,Image,Nature,"['nature', 'beach', 'fitness', 'forest', 'health']",nature
+0271,Image,Education,"['health', 'nature']",health
+0272,Image,Nature,"['technology', 'coding', 'vacation']",coding
+0273,Reel,Travel,"['travel', 'health', 'machinelearning', 'technology', 'fitness']",travel
+0274,Text,Travel,"['nature', 'AI', 'students']",AI
+0275,Video,Travel,"['coding', 'travel', 'fitness']",coding
+0276,Video,Nature,"['coding', 'nature']",nature
+0277,Reel,Education,"['recipe', 'coding', 'students', 'nature', 'health']",recipe
+0278,Image,Education,"['recipe', 'students']",students
+0279,Image,Technology,"['machinelearning', 'travel', 'learning', 'recipe']",recipe
+0280,Text,Nature,"['nature', 'learning', 'technology', 'vacation', 'AI']",technology
+0281,Reel,Travel,"['AI', 'beach', 'fitness', 'learning']",fitness
+0282,Video,Cooking,"['recipe', 'travel', 'technology']",technology
+0283,Text,Technology,"['AI', 'health']",AI
+0284,Video,Fitness,"['health', 'nature', 'fitness']",health
+0285,Video,Nature,"['travel', 'forest', 'wildlife', 'technology', 'coding']",technology
+0286,Video,Cooking,"['beach', 'learning', 'forest', 'coding']",coding
+0287,Reel,Nature,"['learning', 'machinelearning', 'wildlife', 'AI', 'students']",learning
+0288,Reel,Education,"['AI', 'nature']",nature
+0289,Reel,Education,"['technology', 'AI']",AI
+0290,Reel,Travel,"['vacation', 'students']",students
+0291,Video,Technology,"['vacation', 'coding', 'recipe', 'technology', 'wildlife']",coding
+0292,Image,Fitness,"['fitness', 'coding', 'travel', 'vacation', 'machinelearning']",coding
+0293,Image,Technology,"['AI', 'wildlife', 'learning']",wildlife
+0294,Reel,Education,"['health', 'forest', 'learning']",health
+0295,Image,Travel,"['wildlife', 'vacation', 'machinelearning']",wildlife
+0296,Video,Education,"['technology', 'beach']",technology
+0297,Reel,Nature,"['recipe', 'travel']",travel
+0298,Text,Education,"['machinelearning', 'learning']",learning
+0299,Text,Fitness,"['learning', 'beach']",beach

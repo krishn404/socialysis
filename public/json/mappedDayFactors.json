@@ -1,0 +1,240 @@
+{
+    "jan": {
+        "1": {
+            "factor": 0.5,
+            "reason": "New Year's Day celebration."
+        },
+        "2": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "3": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "4": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "5": {
+            "factor": -0.1,
+            "reason": "People return to work or school; reduced activity."
+        },
+        "6": {
+            "factor": 0.2,
+            "reason": "Observed in Europe and Latin America."
+        },
+        "7": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "8": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "9": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "10": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "11": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "12": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "13": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "14": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "15": {
+            "factor": 0,
+            "reason": "Normal engagement."
+        },
+        "16": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "17": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "18": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "19": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "20": {
+            "factor": -0.2,
+            "reason": "Indian student exams lead to reduced activity."
+        },
+        "21": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "22": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "23": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "24": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "25": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "26": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "27": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "28": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "29": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "30": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        },
+        "31": {
+            "factor": 0,
+            "reason": "Neutral engagement."
+        }
+    },
+    "feb": {
+        "1": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "2": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "3": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "4": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "5": {
+            "factor": 0,
+            "reason": "Regular weekdays."
+        },
+        "6": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "7": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "8": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "9": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "10": {
+            "factor": 0.5,
+            "reason": "Significant boost in East Asia (China, Singapore, etc.)."
+        },
+        "14": {
+            "factor": 0.5,
+            "reason": "Valentine's Day celebration globally."
+        },
+        "15": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "16": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "17": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "18": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "19": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "20": {
+            "factor": -0.1,
+            "reason": "Post-Valentine\u2019s slump."
+        },
+        "21": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "22": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "23": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "24": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "25": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "26": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "27": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        },
+        "28": {
+            "factor": 0.1,
+            "reason": "Build-up to spring vibes in some regions."
+        }
+    },
+    "mar": {},
+    "apr": {},
+    "may": {},
+    "jun": {},
+    "jul": {},
+    "aug": {},
+    "sep": {},
+    "oct": {},
+    "nov": {},
+    "dec": {}
+}
