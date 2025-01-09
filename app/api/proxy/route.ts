@@ -39,7 +39,7 @@ export async function POST(req: Request) {
         method: 'POST',
         headers: {
           Authorization:
-            'Bearer AstraCS:ZZxnIgfrDfjlGmDtKPwxyhtX:2f69a7632339c722c19e8410448c134ad773299ecdbebeb769f9e93bf6908b63',
+            'Bearer AstraCS:ihsolAWKwbfHGbepNylXcmzT:7bccc8c7baa95ccbe64edef7bcce1ca91e45f2da703d4797d3328181dd8a798e',
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
