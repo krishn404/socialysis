@@ -241,8 +241,6 @@ export default function Home() {
                 </motion.div>
               </CardContent>
             </AnimatedCard>
-            {/* Chat */}
-            {analysisCompleted && <Chat platform={selectedPlatform} postType={selectedPostType} region={selectedRegion} genre={selectedGenre} />}
 
             <AnimatePresence mode="wait">
               {(likes > 0 || comments > 0 || shares > 0) && (
@@ -264,6 +262,8 @@ export default function Home() {
                 </motion.div>
               )}
             </AnimatePresence>
+
+            {analysisCompleted && <Chat platform={selectedPlatform} postType={selectedPostType} region={selectedRegion} genre={selectedGenre} />}
 
           </div>
         </>

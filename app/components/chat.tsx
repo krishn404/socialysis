@@ -84,8 +84,4 @@ const Chat: React.FC<ChatProps> = ({ platform, postType, region, genre }) => {
   );
 };
 
-<<<<<<< HEAD
 export default Chat;
-=======
-export default Chat;
->>>>>>> 95e295f34e8b68a128a249ba4503ffeae6e46b65

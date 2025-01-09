@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # dependencies
 /node_modules
 # dependencies
@@ -15,6 +16,9 @@
 /build
 
 # Static files cache (Next.js)
+.next
+.next/cache
+
 /.next/cache
 
 # Generated files
@@ -49,3 +53,4 @@ yarn-error.log*
 
 # Other
 *.lock
+=======
