@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-
+# dependencies
+/node_modules
 # dependencies
 /node_modules
 /.pnp
@@ -49,8 +49,3 @@ yarn-error.log*
 
 # Other
 *.lock
-=======
-# Ignore node modules
-node_modules/ 
-.env.local
->>>>>>> 95e295f34e8b68a128a249ba4503ffeae6e46b65
