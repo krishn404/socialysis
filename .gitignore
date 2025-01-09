@@ -1,4 +1,58 @@
-# Ignore node modules
-node_modules/ 
-.env.local
+# dependencies
+/node_modules
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next
+
+# Production build
+/out
+
+# Build artifacts
+/build
+
+# Static files cache (Next.js)
 .next
+.next/cache
+
+/.next/cache
+
+# Generated files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mac system files
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+analysis
+.next
+=======
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Other
+*.lock
+

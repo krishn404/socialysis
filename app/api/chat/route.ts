@@ -43,11 +43,8 @@ export async function POST(req: Request) {
       false
     );
 
-    // Debugging: Log the raw response
-    console.log('Raw Langflow Response:', JSON.stringify(response, null, 2));
-
-    // Validate response structure
-    const message = response?.outputs?.[0]?.outputs?.[0]?.outputs?.message;
+    // Extract message from the nested response structure
+    const message = response?.outputs?.[0]?.outputs?.[0]?.results?.message?.text;
     if (!message || typeof message !== 'string') {
       console.error('Invalid response structure:', response);
       throw new Error('Invalid response format from Langflow');
@@ -68,3 +65,7 @@ export async function POST(req: Request) {
     );
   }
 }
+
+// You can remove the GET method since it's not being used properly
+// If you need GET functionality, it should use URL parameters or query string
+// instead of trying to parse a body (which GET requests don't have)

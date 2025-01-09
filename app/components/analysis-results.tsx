@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion, AnimatePresence } from "framer-motion"
 import type { AnalysisData } from '@/lib/types'
+import Chat from "@/app/components/chat";
 
 // Define the props type
 interface AnalysisResultsProps {
@@ -12,9 +13,11 @@ interface AnalysisResultsProps {
   shares: number;
   platform: string;
   postType: string;
+  region: string;
+  genre: string;
 }
 
-export default function AnalysisResults({ likes, comments, shares, platform, postType }: AnalysisResultsProps) {
+export default function AnalysisResults({ likes, comments, shares, platform, postType, region, genre }: AnalysisResultsProps) {
   const [data, setData] = useState<AnalysisData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -22,6 +25,7 @@ export default function AnalysisResults({ likes, comments, shares, platform, pos
   const [currentLikes, setLikes] = useState(0);
   const [currentComments, setComments] = useState(0);
   const [currentShares, setShares] = useState(0);
+  const [analysisCompleted, setAnalysisCompleted] = useState(false);
 
   const fetchData = async () => {
     try {
@@ -67,6 +71,10 @@ export default function AnalysisResults({ likes, comments, shares, platform, pos
     setComments(comments);
     setShares(shares);
   }, [likes, comments, shares]);
+
+  const handleAnalyzeComplete = () => {
+    setAnalysisCompleted(true);
+  };
 
   if (loading) {
     return (
@@ -129,51 +137,67 @@ export default function AnalysisResults({ likes, comments, shares, platform, pos
   }
 
   return (
-    <Card className="mt-8">
-      <CardHeader>
-        <CardTitle>Analysis Results</CardTitle>
-        <CardDescription>
-          Engagement metrics for {platform} - {postType}
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <AnimatePresence>
-            <motion.div
-              key="likes"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              className="bg-primary/10 p-4 rounded-lg"
-            >
-              <h3 className="font-semibold">Likes</h3>
-              <p className="text-2xl">{currentLikes.toLocaleString()}</p>
-            </motion.div>
-            <motion.div
-              key="comments"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ delay: 0.1 }}
-              className="bg-primary/10 p-4 rounded-lg"
-            >
-              <h3 className="font-semibold">Comments</h3>
-              <p className="text-2xl">{currentComments.toLocaleString()}</p>
-            </motion.div>
-            <motion.div
-              key="shares"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ delay: 0.2 }}
-              className="bg-primary/10 p-4 rounded-lg"
-            >
-              <h3 className="font-semibold">Shares</h3>
-              <p className="text-2xl">{currentShares.toLocaleString()}</p>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </CardContent>
-    </Card>
+    <>
+      {loading || error || !data ? (
+        <Card className="mt-8">
+          <CardContent className="pt-6">
+            <div className="flex flex-col items-center justify-center h-32">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mb-4"></div>
+              <p className="text-sm text-muted-foreground">
+                {retryCount > 0 ? `Retry attempt ${retryCount}...` : 'Loading...'}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      ) : (
+        <Card className="mt-8">
+          <CardHeader>
+            <CardTitle>Analysis Results</CardTitle>
+            <CardDescription>
+              Engagement metrics for {platform} - {postType}
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <AnimatePresence>
+                <motion.div
+                  key="likes"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  className="bg-primary/10 p-4 rounded-lg"
+                >
+                  <h3 className="font-semibold">Likes</h3>
+                  <p className="text-2xl">{currentLikes.toLocaleString()}</p>
+                </motion.div>
+                <motion.div
+                  key="comments"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ delay: 0.1 }}
+                  className="bg-primary/10 p-4 rounded-lg"
+                >
+                  <h3 className="font-semibold">Comments</h3>
+                  <p className="text-2xl">{currentComments.toLocaleString()}</p>
+                </motion.div>
+                <motion.div
+                  key="shares"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ delay: 0.2 }}
+                  className="bg-primary/10 p-4 rounded-lg"
+                >
+                  <h3 className="font-semibold">Shares</h3>
+                  <p className="text-2xl">{currentShares.toLocaleString()}</p>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+      {analysisCompleted && <Chat platform={platform} postType={postType} region={region} genre={genre} />}
+    </>
   )
 }
