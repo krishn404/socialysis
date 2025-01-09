@@ -44,22 +44,16 @@ export async function POST(req: Request) {
         },
         body: JSON.stringify({
           tweaks: {
-            'TextInput-5VBYv': {
-              input_value: platform, // Pass platform parameter
-            },
-            'TextInput-postType': {
-              input_value: postType, // Pass postType parameter
-            },
-            "TextInput-BMXIX": {
+            'TextInput-BMXIX': {
                 input_value: postType
               },
-              "TextInput-fzQrH": {
+              'TextInput-fzQrH': {
                 input_value: platform
               },
-              "TextInput-80YvO": {
+              'TextInput-80YvO': {
                 input_value: region
               },
-              "TextInput-3I3Bk": {
+              'TextInput-3I3Bk': {
                 input_value: genre
               },
           },
