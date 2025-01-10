@@ -6,10 +6,11 @@ import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedCard } from "@/components/ui/animated-card"
 import AnalysisResults from './components/analysis-results'
-import { Instagram, Linkedin, Twitter, BarChart3, Image, Film, Images, Sparkles } from 'lucide-react'
+import { Instagram, Linkedin, Twitter, BarChart3, Image, Film, Images, Sparkles, CookingPot ,Plane,TentTree,Binary, Dumbbell, GraduationCap} from 'lucide-react' 
 import { useState } from 'react'
 import Chat from "@/app/components/chat"
 import LandingPage from "@/app/components/landing-page"
+import 'flag-icon-css/css/flag-icons.min.css'
 
 export default function Home() {
   const [likes, setLikes] = useState(0)
@@ -77,20 +78,20 @@ export default function Home() {
   ]
 
   const genres = [
-    { value: 'travel', label: 'Travel' },
-    { value: 'cooking', label: 'Cooking' },
-    { value: 'nature', label: 'Nature' },
-    { value: 'tech', label: 'Tech' },
-    { value: 'fitness', label: 'Fitness' },
-    { value: 'education', label: 'Education' }
+    { value: 'travel', label: 'Travel', icon: Plane },
+    { value: 'cooking', label: 'Cooking', icon: CookingPot },
+    { value: 'nature', label: 'Nature', icon: TentTree },
+    { value: 'tech', label: 'Tech', icon: Binary },
+    { value: 'fitness', label: 'Fitness', icon: Dumbbell },
+    { value: 'education', label: 'Education', icon: GraduationCap }
   ]
 
   const regions = [
-    { value: 'usa', label: 'USA' },
-    { value: 'india', label: 'India' },
-    { value: 'canada', label: 'Canada' },
-    { value: 'germany', label: 'Germany' },
-    { value: 'australia', label: 'Australia' }
+    { value: 'usa', label: <span className="flex items-center"><span className="flag-icon flag-icon-us mr-2"></span> USA</span> },
+    { value: 'india', label: <span className="flex items-center"><span className="flag-icon flag-icon-in mr-2"></span> India</span> },
+    { value: 'canada', label: <span className="flex items-center"><span className="flag-icon flag-icon-ca mr-2"></span> Canada</span> },
+    { value: 'germany', label: <span className="flex items-center"><span className="flag-icon flag-icon-de mr-2"></span> Germany</span> },
+    { value: 'australia', label: <span className="flex items-center"><span className="flag-icon flag-icon-au mr-2"></span> Australia</span> }
   ]
 
   return (
@@ -164,9 +165,12 @@ export default function Home() {
                         <SelectValue placeholder="Select post type" />
                       </SelectTrigger>
                       <SelectContent>
-                        {postTypes.map(({ value, label }) => (
+                        {postTypes.map(({ value, label, icon: Icon }) => (
                           <SelectItem key={value} value={value} className="flex items-center gap-2 h-11">
-                            {label}
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                              <Icon className="h-4 w-4" />
+                              {label}
+                            </div>
                           </SelectItem>
                         ))}
                       </SelectContent>
@@ -176,15 +180,20 @@ export default function Home() {
                   <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }} className="space-y-3">
                     <label className="text-sm font-medium">Genre</label>
                     <Select onValueChange={setSelectedGenre} value={selectedGenre}>
-                      <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
-                        <SelectValue placeholder="Select genre" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {genres.map(({ value, label }) => (
-                          <SelectItem key={value} value={value} className="h-11">{label}</SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <SelectTrigger className="w-full bg-muted/50 backdrop-blur-sm h-11">
+                      <SelectValue placeholder="Select genre" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {genres.map(({ value, label, icon: Icon }) => ( // Updated to include icons
+                          <SelectItem key={value} value={value} className="flex items-center gap-2 h-11">
+                          <div className="flex items-center gap-2 text-muted-foreground">
+                            <Icon className="h-4 w-4" />
+                            {label}
+                          </div>
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                   </motion.div>
 
                   <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }} className="space-y-3">
