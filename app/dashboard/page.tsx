@@ -18,7 +18,7 @@ export default function DashboardPage() {
   const [combinationImpacts, setCombinationImpacts] = useState<any[]>([]);
   const [genreCollaboration, setGenreCollaboration] = useState<any[]>([]);
   const [dayFactors, setDayFactors] = useState<
-    Record<string, Record<string, { factor: number; reason: string }>>
+    Record<string, Record<string, DayData>>
   >({});
 
   // Fetch main analysis data
@@ -48,12 +48,12 @@ export default function DashboardPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-muted text-white">
       <div className="container mx-auto px-4 py-8 space-y-8">
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+        <h1 className="text-2xl font-bold text-black dark:text-white">Dashboard</h1>
 
         {/* Totals */}
         <div className="grid gap-6 md:grid-cols-3">
           {Object.entries(totals).map(([key, value]) => (
-            <div key={key} className="p-6 bg-card rounded-lg shadow-md">
+            <div key={key} className="p-6 bg-black rounded-lg shadow-md">
               <h2 className="text-lg font-medium capitalize">{key}</h2>
               <p className="text-2xl font-bold">{value.toLocaleString()}</p>
             </div>
