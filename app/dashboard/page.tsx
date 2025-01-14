@@ -37,7 +37,7 @@ export default function DashboardPage() {
 
   // Fetch yearly heatmap data
   useEffect(() => {
-    fetch("http://localhost:3000/api/json?filename=completeDayFactors")
+    fetch("https://socialysis.vercel.app/api/json?filename=completeDayFactors")
       .then((res) => res.json())
       .then((data) => {
         setDayFactors(data);
